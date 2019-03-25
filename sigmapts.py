@@ -23,11 +23,11 @@ def sigma(xM,xC,vC,nC,q,t):
     Pa  = np.concatenate((Pa1,Pa2,Pa3)) # Pa is the diagonal-like matrix from the algorithm
     
     x0a_hat = np.concatenate((xM,vM,nM)) # Augmented state
-    
+
     L = np.shape(xM)[1]
     lam = (q[1]**2)*(L + q[3]) - L
     chiA = np.concatenate((x0a_hat,x0a_hat+sp.linalg.sqrtm((L + lam)*Pa), x0a_hat - sp.linalg.sqrtm((L+lam)*Pa)), axis = 1)
-        
+
     if t = 1:
         wm = lam/(lam + L)
         wc = lam/(lam + L) + (1-q[1]**2 + q[2])

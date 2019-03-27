@@ -2,6 +2,7 @@
 # prev: time step k-1
 # next: time step k+1
 # Lorenz System w=[sigma; rho; beta] x=[x;y;z]
+import numpy as np
 
 def param_dyn(w_prev, u_curr): # Eqn.21
     w_curr = w_prev + u_curr

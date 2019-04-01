@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from dualDyn import param_dyn, meas, state_dyn
+from dualDyn import param_dyn, meas, state_dyn # Importing system models from dualDyn.py
 import numpy as np
 
 

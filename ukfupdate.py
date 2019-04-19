@@ -12,14 +12,15 @@ def ukfupdate(xsigmapts, ysigmapts, yobs, sigw):
     :return: updatedata.
     """
     # Calculating the mean of xsigmapts
-    xm = xsigmapts.mean(1)
+    xm = xsigmapts.mean(0)
     # Calculating the mean of ysigmapts
-    ym = ysigmapts.mean(1)
+    ym = ysigmapts.mean(0)
     # Calculating pxx
-    l1 = np.shape(xsigmapts)[1]
-    pxx = np.zeros(l1, l1)
-    pyy = np.zeros(l1, l1)
-    pxy = np.zeros(l1, l1)
+    l1 = np.shape(xsigmapts)[0]
+    pxx = np.zeros((l1, l1))
+    pyy = np.zeros((l1, l1))
+    pxy = np.zeros((l1, l1))
+    # If error happens here check for dimension of state space and the number of sigma points
     for i in range(0, 2*l1):
         pxx = pxx + sigw.wc[i]*np.matmul(xsigmapts[:, i]-xm, (xsigmapts[:, i]-xm).transpose())
         pyy = pyy + sigw.wc[i]*np.matmul(ysigmapts[:, i]-ym, (ysigmapts[:, i]-ym).transpose())

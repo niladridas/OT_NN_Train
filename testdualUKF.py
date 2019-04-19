@@ -20,11 +20,12 @@ if __name__ == '__main__':
 # yobs = # An array with dimension no_of_y_states X no_of_observations
 
 # TO-DO: Weight filter
-def weightpropdualukf():
+def weightpropdualukf(postsamples,weights):
   """ Weight update function for Dual UKF
 
-  :return: propagated prior weights, expected observations, 
+  :return: propagated prior samples, expected observations
   """
+  
 
 def weightupdatedualukf():
 

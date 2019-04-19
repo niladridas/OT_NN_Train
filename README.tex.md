@@ -11,8 +11,6 @@ Contributors:
 ****
 **Dual Estimation:**<br />
 Discrete-time Nonlinear Dynamics for dual estimation problem
-$\begin{align}
-\mathbf{x}_{k+1} &= \mathbf{F}(\mathbf{x}_k,\mathbf{v}_k,\mathbf{w})\\
-\mathbf{y}_k &= \mathbf{H}(\mathbf{x}_k,\mathbf{n}_k,\mathbf{w})
-\end{align}$
+$$\mathbf{x}_{k+1} = \mathbf{F}(\mathbf{x}_k,\mathbf{v}_k,\mathbf{w})\\
+\mathbf{y}_k = \mathbf{H}(\mathbf{x}_k,\mathbf{n}_k,\mathbf{w})$$
 where the system states are denoted by $\mathbf{x}_k$.

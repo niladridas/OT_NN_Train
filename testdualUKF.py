@@ -2,7 +2,7 @@
 
 
 def main():
-    """ Dual UKF.
+    """ Dual UKF for Discrete time systems
 
     This function test the dual UKF algorithm.
     Two UKF algorithms are run simultaneously.
@@ -19,7 +19,14 @@ if __name__ == '__main__':
 #TO-DO: Observation sequence
 # yobs = # An array with dimension no_of_y_states X no_of_observations
 
-# TO-DO: Initializing the weight filter
+# TO-DO: Weight filter
+def weightpropdualukf():
+  """ Weight update function for Dual UKF
 
-# TO-DO: Initializing the signal filter
+  :return: propagated prior weights, expected observations, 
+  """
+
+def weightupdatedualukf():
+
+# TO-DO: Signal filter
 

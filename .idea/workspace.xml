@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f9660b9-57b2-4f72-bcba-f5a4c6f683ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/testdualUKF.py" beforeDir="false" afterPath="$PROJECT_DIR$/testdualUKF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ukfupdate.py" beforeDir="false" afterPath="$PROJECT_DIR$/ukfupdate.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testdualUKF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="666">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -152,12 +151,12 @@
       <workItem from="1555637527114" duration="146000" />
       <workItem from="1555637711038" duration="2161000" />
       <workItem from="1555689808441" duration="929000" />
-      <workItem from="1555703985598" duration="4353000" />
+      <workItem from="1555703985598" duration="5261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7589000" />
+    <option name="totallyTimeSpent" value="8497000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -170,7 +169,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-332" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19329074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -227,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testdualUKF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="666">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>

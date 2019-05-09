@@ -4,7 +4,7 @@ function [Wnext,Bnext] = weightbiasup(NN,x,y,eta,CdW)
     end
     for i = 1:size(x,1) % Number of individual samples
         % Forward propagation
-        [A,Z] = forwardprop(NN,x(i,:));
+        [A,Z] = forwardprop(NN,x(i,:)');
 
         % Error signal in the final layer
         E = y(i,:)-A{end};

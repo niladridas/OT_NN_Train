@@ -13,25 +13,25 @@ oP = X;
 for i = 1:size(X,1)
     for j = 1:del
         if (i-(del-j+1))<=0
-            iP(i,j) = 0;
+          iP(i,j) = 0;
         else 
-            iP(i,j) = X(i-(del-j+1),1);
+        iP(i,j) = X(i-(del-j+1),1);
         end
     end
 end
 
-ni = 17;
-Ln = [10;10;1];
+ni = 1;
+Ln = [20;1];
 eta = 0.55;
 maxitr = 1000;
 NN = NNconstruct(ni,Ln); % Weights and Bias randomly initialized
 
-% % Create data set
-% x = linspace(0,4*pi,100)';
-% y = 0.5*(sin(x)+1);
-% plot(x,y);
+% Create data set
+x = linspace(0,4*pi,100)';
+y = 0.5*(sin(x)+1);
+plot(x,y);
 for tau = 1: maxitr
-    [Wnext,Bnext] = weightbiasup(NN,iP,oP,eta);
+    [Wnext,Bnext] = weightbiasup(NN,x,y,eta);
     NN.W = Wnext;
     NN.B = Bnexy;
 end

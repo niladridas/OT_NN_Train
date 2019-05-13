@@ -1,6 +1,12 @@
 clc;clear;close all;
-load('data/oP.mat'); % NN output
-load('data/y1.mat'); % Normalized real output data
+load('data/oP.mat'); % Normalized real output data 
+load('data/y1.mat'); % NN output
+load('data/X.mat');
+X = X(1:400,1);
+% Normalize the data
+X = (X - min(X))./(max(X)-min(X));
+
+
 
 ns = size(oP,1);
 
@@ -33,7 +39,7 @@ ax.YLabel.String = 'Value';
 %ax.XLim = [1 ns];
 %ax.YLim = [0 6]; 
 
-legend('NN','real');
+legend('real', 'NN');
 
 hold on;
 

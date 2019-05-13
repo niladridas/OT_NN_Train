@@ -4,29 +4,34 @@ clc;clear;close all;
 format long 
 
 load('data/X.mat');
-X = X(1:400,1);
+X_nn = X(1:600,1); % use this X to train NN
 % Normalize the data
-X = (X - min(X))./(max(X)-min(X));
+X_nn = (X_nn - min(X_nn))./(max(X_nn)-min(X_nn));
 del = 17; % delay parameter
 
-for i=1:(size(X,1)-del)
-    iP(i,:) = X(i:(i+del-1),1)';
-    oP(i,1) = X(i+del,1);
+for i=1:(size(X_nn,1)-del)
+    iP(i,:) = X_nn(i:(i+del-1),1)';
+    oP(i,1) = X_nn(i+del,1);
 end
 
 
-ni = 17;
-Ln = [10;10;1];
-eta = 0.35;
+ni = del;
+Ln = [10;12;1];
+eta = 0.25;
 maxitr = 2000;
 NN = NNconstruct(ni,Ln); % Weights and Bias randomly initialized
-
+avgDelta = 1;
+tau =1;
+% while avgDelta > 1e-3
 for tau = 1: maxitr
-    [Wnext,Bnext] = weightbiasup(NN,iP,oP,eta);
+    clc
+    fprintf('Itr = %d.\n', tau)
+    [Wnext,Bnext,avgDelta] = weightbiasup(NN,iP,oP,eta);
     NN.W = Wnext;
     NN.B = Bnext;
+%     tau =tau+1;
 end
-
+% end
 
 y1 = zeros(size(oP,1),size(oP,2));
 
@@ -35,7 +40,14 @@ for i = 1:size(iP,1)
     y1(i,1) = A{end};
 end
 
-
+%% Plot
+% load('data/oP.mat'); % Normalized real output data 
+% load('data/y1.mat'); % NN output
+% load('data/X.mat');
+figure; clf; hold on;
+plot(oP,'r','Linewidth',1)
+plot(y1,'b','Linewidth',1)
+legend('Real','NN')%, 'X')
 
 
 

@@ -19,8 +19,8 @@ function NN = NNconstruct(ni,Ln)
         else
             k = Ln(i-1,1);
         end
-        W{i} = rand(Ln(i,1),k)/20;
-        B{i} = rand(Ln(i,1),1)/20;
+        W{i} = rand(Ln(i,1),k)/40;
+        B{i} = rand(Ln(i,1),1)/40;
     end
     NN.W = W;
     NN.B = B;

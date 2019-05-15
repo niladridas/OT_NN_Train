@@ -1,5 +1,5 @@
-% Author: Niladri Das
-% Date: 24th April 2019
+% Author: Niladri Das, Vedang Deshpande
+% Date: 15th May 2019
 
 % Input params: ni : number of inputs    : scalar
 % Input params: Ln : List containing number of nodes in each layers from
@@ -19,8 +19,8 @@ function NN = NNconstruct(ni,Ln)
         else
             k = Ln(i-1,1);
         end
-        W{i} = rand(Ln(i,1),k)/40;
-        B{i} = rand(Ln(i,1),1)/40;
+        W{i} = (2*rand(Ln(i,1),k)-1); % [-1 1]
+        B{i} = (2*rand(Ln(i,1),1)-1);
     end
     NN.W = W;
     NN.B = B;

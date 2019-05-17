@@ -1,0 +1,41 @@
+Satellite Differential Equation
+===============================
+We consider a simple satellite dynamics with states
+(r,rdot,th,thdot). 
+
+Here the state variables are normalized with respect to radius of earth 
+and orbit time.
+
+Therefore, variable r=1 means 6378.1363 km, which is the radius of earth.
+For a particular satellite, time is normalized by orbit time Tp.
+Therefore, t=1 => 6300 s for the satellite considered in the simulations.
+Angular variable th is unchanged.
+
+The dynamics is defined in satelliteDynamics.m
+
+This the simplest satellite model. Does not include any perturbation terms
+other than J2 effect. The J2 effect can be switched on/off in the code.
+
+Simulate only one initial condition
+===================================
+Run simSatellite.m
+
+Simulate a bunch of initial conditions
+======================================
+Run simSatelliteMC.m
+
+This will be particularly useful for particle based algorithms such as 
+SMC/SIS.
+
+In the code, uncertainty is only assumed in normalized (r,th) and sampled 
+over uniform distribution with some interval. This can be easily extended 
+to Gaussian. Care must be take to avoid unrealistic samples for normalized
+variable r.
+
+The code finally plots 6 polar plots (r,th) which shows the quick growth in
+the uncertainty in the angular variable th.
+
+Our objective is to mitigate the growth and estimate the angular position
+with accuracy < 1%. This has to be achieved with large sensing gaps  and 
+larger sensor noise.
+

@@ -15,17 +15,17 @@ ny = Ln(end); % Number of measurements = no. of o/p of NN
 Inx  = eye(nx);
 Ast = Inx; % State transition matrix is identity
 
-var_meas = 0.1; % variance of measurement noise; sigma^2
+var_meas = 0.3; % variance of measurement noise; sigma^2
 var_proc = 0.01; % variance of process noise
-var_initState = 1; % initial state covariance
+var_initState = 0.1; % initial state covariance
 
 P0 = var_initState*Inx; % Initial state covariance matrix
 Q = var_proc*Inx; % Process noise covariance matrix
 R = var_meas*eye(ny); % Measurements noise covariance matrix
-y1 = y1(1:20);
+y1 = y1(1:200);
 yMeas = y1 + normrnd(0,var_meas,[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 5;
+maxEpoch = 1;
 
 %% EKF Code
 x_prev = x0; % estimate of x(k-1)
@@ -64,10 +64,18 @@ end
 
 % Augmented state = [state; process_noise; measurement_noise]; 
 procMean = zeros(nx,1); measMean = zeros(ny,1);
+
+% load('C:\_WORK_SPACE\test_py\UKF\MATLAB\data\nn_ukf.mat')
+% x0 = nn2param(NN);
+% x0 = x0 + 2*rand(length(x0),1)*1e-3;
+% P0 = var_initState*Inx*1e0;
+% Q = var_proc*Inx*1e1; 
+% R = var_meas*eye(ny)*1e1;
+
 xAug0 = [x0;procMean;measMean];
-PAug0 = diag([diag(0.01*P0);diag(Q);diag(R)]); 
+PAug0 = diag([diag(P0);diag(Q);diag(R)]); 
 % x_prev = x0;
-% P_prev = P0/100;
+% P_prev = P0;
 xAug_prev = xAug0; 
 PAug_prev = PAug0; 
 yUKF=zeros(kEnd,maxEpoch);
@@ -76,12 +84,12 @@ for iEp = 1:maxEpoch
         clc;
         fprintf('UKF: Epoch = %d, k = %d.\n',iEp,k);
         
-        [xAugSP,Wm,Wc] = getSigmaPts(xAug_prev,PAug_prev,1e-3,0,2); % sigma pts of augemented state
+        [xAugSP,Wm,Wc] = getSigmaPts(xAug_prev,PAug_prev,(1e-2),0,2); % sigma pts of augemented state
         nPt = size(xAugSP,2); % no. of sigma pts
         xSP = xAugSP(1:nx,:); % sigma points of the actual state
         procSP =  xAugSP(nx+1:nx+nx,:); % sigma points of the process noise
         measSP = xAugSP(nx+nx+1:end,:); % sigma points of the measurement noise
-%         
+        
 %         [xSP,Wm,Wc] = getSigmaPts(x_prev,P_prev,1e-3,0,2);
 %         nPt = size(xSP,2); % no. of sigma pts
         
@@ -122,7 +130,6 @@ for iEp = 1:maxEpoch
         xAug_prev = [x_pst;procMean;measMean];
         PAug_prev = [P_pst,                    zeros(nx,nx+ny);
             zeros(nx,nx+ny)', diag([diag(Q);diag(R)])];
-%         NN_UKF = param2nn(NN_UKF,x_pst); % Update parameters of the NN
     end % k
     % Evaluate o/p of NN using a posteriori parameters estimates
     NN_UKF = param2nn(NN_UKF,x_pst); % Update parameters of the NN

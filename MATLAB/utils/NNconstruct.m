@@ -3,6 +3,7 @@
 
 % Input params: ni : number of inputs    : scalar
 % Input params: Ln : List containing number of nodes in each layers from
+% Input params: seed : seed for generating random numbers
 % input to output.                       : vector : dim n1x1
 % Ln(1,end) = no
 % Dimension check: Ln should have a dimension of n1x1
@@ -10,8 +11,9 @@
 % between layers i and i-1: W{i}(k,l) is weight between k node of i layer
 % to l node of i-1 layer. The layer
 
-function NN = NNconstruct(ni,Ln)
+function NN = NNconstruct(ni,Ln,seed)
     % Constructing the W cell array
+    rng(seed);
     nl = length(Ln);
     for i = 1:nl
         if i == 1

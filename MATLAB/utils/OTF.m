@@ -21,7 +21,7 @@ function [xSamples_Post,W_pr] = OTF(xSamples_init,fstate,hmeas,yMeas,Q,R,iP)
     W_pr = ones(1,nSample)/nSample; % Prior is equally weighted
     xSamples_prev = xSamples_init;
     for k = 1:kEnd % time steps
-        fprintf('  k = %d.\n',k);
+        % fprintf('  k = %d.\n',k);
         % Propagation/Prediction
         xSamples_pr = zeros(nx,nSample);
         for i = 1:nSample

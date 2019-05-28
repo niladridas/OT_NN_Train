@@ -15,7 +15,8 @@ function [xSigmaPts,Wm,Wc] = getSigmaPts(xMean,Px,a,k,b)
     
     % Ref1: Sigma Pts 
     lambda = a^2*(L+k)-L;
-    TEMP = sqrtm((L+lambda)*Px)'; % Mind the transpose
+%     TEMP = sqrtm((L+lambda)*Px)'; % Mind the transpose
+    TEMP = sqrt(L+lambda)*chol(Px)';
     xSigmaPts = zeros(L,nPt);
     xSigmaPts(:,1) = xMean;
     for i = 1:L

@@ -24,8 +24,11 @@ function P = opt_map(X1,W1,W2)
     D = cost_mat(X1);
     D_vec = reshape(D,Ns*Ns,1);
     [A1,A2] = lp_consts(Ns);
-    options = optimoptions('linprog','Algorithm','dual-simplex','display', 'off');
-    T = linprog(D_vec,[],[],[A2;A1],[W1';W2'],zeros(Ns*Ns,1),[],[],options);
+    % options = optimoptions('linprog','Algorithm','dual-simplex','display', 'off');
+    % T = linprog(D_vec,[],[],[A2;A1],[W1';W2'],zeros(Ns*Ns,1),[],[],options);
+    options.Simplex = 'dual';
+    options.Display = 'off';
+    T = linprog(D_vec,[],[],[A2;A1],[W1';W2'],zeros(Ns*Ns,1),[],options);
     P = T./repmat(W1',Ns,1); 
     P = reshape(P,[Ns,Ns]);
 end

@@ -29,6 +29,7 @@ yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measure
 kEnd = length(yMeas);
 maxEpoch = 10;
 nRepeat = 20;
+arrRepeat = 1:20;
 
 % figure(1); clf; hold on; box; grid;
 % plot(y1,'r','LineWidth',1) % Clean output
@@ -39,7 +40,7 @@ nRepeat = 20;
 nSample = 2*nx+1;
 %% EKF Code
 yEKF=zeros(kEnd,maxEpoch,nRepeat);
-parfor iRep = 1:nRepeat
+parfor (iRep = 1:nRepeat,4)
     fprintf('EKF: Rep = %d\n',iRep);
     yEKF(:,:,iRep) = multipleEpochEKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
 end % repeat
@@ -97,10 +98,12 @@ disp('UKF Done.')
 % drawnow;
 
 %% OTF Code
+tic
 yOTF=zeros(kEnd,maxEpoch,nRepeat);
-parfor iRep = 1:nRepeat
+% parfor (iRep = 1:nRepeat,2)
+for iRep = 1:nRepeat
     fprintf('OTF: Rep = %d\n',iRep);
-    yOTF(:,:,iRep) = multipleEpochOTF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep))
+    yOTF(:,:,iRep) = multipleEpochOTF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
 end % repeat
 
 for iRep = 1:nRepeat
@@ -109,6 +112,8 @@ for iRep = 1:nRepeat
     end % epoch
 end
 disp('OTF Done.')
+toc
+save OTF_ref.mat
 % figure(1); hold on; box; grid;
 % plot(yOTF(:,Ep_OTF),'m--','LineWidth',1) 
 % figure(2); hold on; box; grid;
@@ -136,6 +141,6 @@ disp('OTF Done.')
 
 figure(3); hold on; grid on;
 plot(mean(RMSE_EKF,3),'b'); plot(mean(RMSE_EKF,3),'bo');
-plot(mean(RMSE_EnKF,3),'k'); plot(mean(RMSE_EnKF,3),'k*'); 
+plot(mean(RMSE_EnKF,3),'k'); plot(mean(RMSE_EnKF,3),'ko'); 
 plot(mean(RMSE_UKF,3),'g'); plot(mean(RMSE_UKF,3),'go');
 plot(mean(RMSE_OTF,3),'m'); plot(mean(RMSE_OTF,3),'mo');

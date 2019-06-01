@@ -101,7 +101,8 @@ disp('UKF Done.')
 tic
 yOTF=zeros(kEnd,maxEpoch,nRepeat);
 % parfor (iRep = 1:nRepeat,2)
-for iRep = 1:nRepeat
+for iRep = 6:10
+    clc
     fprintf('OTF: Rep = %d\n',iRep);
     yOTF(:,:,iRep) = multipleEpochOTF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
 end % repeat
@@ -113,7 +114,7 @@ for iRep = 1:nRepeat
 end
 disp('OTF Done.')
 toc
-save OTF_ref.mat
+save OTF_ref_6_to_10.mat
 % figure(1); hold on; box; grid;
 % plot(yOTF(:,Ep_OTF),'m--','LineWidth',1) 
 % figure(2); hold on; box; grid;

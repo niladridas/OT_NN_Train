@@ -12,3 +12,4 @@ yUKFrmse = sqrt(squeeze(sum((yUKF-yMeas).*(yUKF-yMeas),1))./size(yMeas,1))';
 EKFminimum = min(min(yEKFrmse));[EFKepoc,EKFrep]=find(EKFminimum==yEKFrmse);
 EnKFminimum = min(min(yEnKFrmse));[EnFKepoc,EnKFrep]=find(EnKFminimum==yEnKFrmse);
 UKFminimum = min(min(yUKFrmse));[UKFepoc,UKFrep]=find(UKFminimum==yUKFrmse);
+%

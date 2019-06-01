@@ -44,5 +44,6 @@ figure(1); hold on; box; grid;
 plot(yEKFtest(:),'b--','LineWidth',1);
 plot(yEnKFtest(:),'k--','LineWidth',1);
 plot(yUKFtest(:),'g--','LineWidth',1);
-plot(y1(:),'r--','LineWidth',1);
+plot(y1(:),'r','LineWidth',1);
+legend('y_{EKF}','y_{EnKF}','y_{UKF}','y_{real}');
 drawnow;

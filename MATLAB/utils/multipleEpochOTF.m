@@ -7,7 +7,7 @@ xSamples_prev = xInitSamples;
 yOTF=zeros(kEnd,maxEpoch);
 for iEp = 1:maxEpoch
     % clc;
-    % fprintf('OTF: Epoch = %d.\n',iEp);
+    fprintf('  Epoch = %d.\n',iEp);
     [xSamples_pst,W_pst] = OTF(xSamples_prev,fstate,hmeas,yMeas,Q,R,iP);
     x_pst = xSamples_pst*W_pst';
     xSamples_prev = xSamples_pst;

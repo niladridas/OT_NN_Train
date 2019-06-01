@@ -140,8 +140,9 @@ save OTF_ref_6_to_10.mat
 % legend('EKF','UKF')
 % set(gcf,'Position',[368,118,933,347])
 
-figure(3); hold on; grid on;
-plot(mean(RMSE_EKF,3),'b'); plot(mean(RMSE_EKF,3),'bo');
-plot(mean(RMSE_EnKF,3),'k'); plot(mean(RMSE_EnKF,3),'ko'); 
-plot(mean(RMSE_UKF,3),'g'); plot(mean(RMSE_UKF,3),'go');
-plot(mean(RMSE_OTF,3),'m'); plot(mean(RMSE_OTF,3),'mo');
+figure(3); clf; hold on; grid on;
+plot(mean(RMSE_EKF,3),'bo-'); 
+plot(mean(RMSE_EnKF,3),'ko-'); 
+plot(mean(RMSE_UKF,3),'go-'); 
+plot(mean(RMSE_OTF,3),'mo-'); 
+legend('EKF','EnKF','UKF','OTF')

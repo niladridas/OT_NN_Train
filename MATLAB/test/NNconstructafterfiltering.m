@@ -4,7 +4,7 @@
 clc; clear; close all;
 % Load output data for each training method
 load('./data/E_En_U_KF_ref.mat');
-load('./data/OT_1_5_11_15.mat');
+load('./data/OT_1_15.mat');
 % Calculating RMSE for each training method
 yEKFrmse = sqrt(squeeze(sum((yEKF-yMeas).*(yEKF-yMeas),1))./size(yMeas,1))';
 yEnKFrmse = sqrt(squeeze(sum((yEnKF-yMeas).*(yEnKF-yMeas),1))./size(yMeas,1))';
@@ -20,12 +20,12 @@ UKFminimum = min(min(yUKFrmse));
 [UKFrep,UKFepoc]=find(UKFminimum==yUKFrmse);
 OTFminimum = min(min(yOTFrmse));
 [OTFrep,OTFepoc]=find(OTFminimum==yOTFrmse);
-% Careful with the index for OT, since the OT data is 1:5 and 6:15
-% Modifying the indices for OT
-if OTFrep >= 5
-   OTFrep = OTFrep - 5;
-   OTFrep = OTFrep + 10;
-end
+% % Careful with the index for OT, since the OT data is 1:5 and 6:15
+% % Modifying the indices for OT
+% if OTFrep >= 5
+%    OTFrep = OTFrep - 5;
+%    OTFrep = OTFrep + 10;
+% end
 %% We have the repitition number and epoch number to train for each filter
 %% Initialize
 load('data/trained_NN_complete_data.mat')
@@ -62,9 +62,9 @@ yUKF = yUKF(:,end);
 
 %% OT Code
 % TO-DO
-% tic;[yOTF, NN_OTF] = multipleEpochOTFv1(OTFepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,OTFrep));
-% toc;disp('OT Training Done.')
-% yOTF = yOTF(:,end);
+tic;[yOTF, NN_OTF] = multipleEpochOTFv1(OTFepoc,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,OTFrep));
+toc;disp('OT Training Done.')
+yOTF = yOTF(:,end);
 
-% save('./data/AllNN.mat','NN_EKF','yEKF','NN_EnKF','yEnKF','NN_UKF','yUKF','y1','yMeas','NN_OTF','yOTF');
+save('./data/AllNN.mat','NN_EKF','yEKF','NN_EnKF','yEnKF','NN_UKF','yUKF','y1','yMeas','NN_OTF','yOTF');
 

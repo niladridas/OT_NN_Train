@@ -46,25 +46,25 @@ y1 = y1(1:200);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
 %% EKF Code: just for training
-% tic ;[yEKF,NN_EKF] = multipleEpochEKFv1(EFKepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,EKFrep));
-% toc;disp('EKF Training Done.')
-% yEKF = yEKF(:,end);
+tic ;[yEKF,NN_EKF] = multipleEpochEKFv1(EFKepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,EKFrep));
+toc;disp('EKF Training Done.')
+yEKF = yEKF(:,end);
 
-% %% EnKF Code
-% tic;[yEnKF,NN_EnKF] = multipleEpochEnKFv1(EnFKepoc,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,EnKFrep));
-% toc;disp('EnKF Training Done.')
-% yEnKF = yEnKF(:,end);
-% 
-% %% UKF Code 
-% tic;[yUKF, NN_UKF] = multipleEpochUKFv1(UKFepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,UKFrep));
-% toc;disp('UKF Training Done.')
-% yUKF = yUKF(:,end);
+%% EnKF Code
+tic;[yEnKF,NN_EnKF] = multipleEpochEnKFv1(EnFKepoc,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,EnKFrep));
+toc;disp('EnKF Training Done.')
+yEnKF = yEnKF(:,end);
+
+%% UKF Code 
+tic;[yUKF, NN_UKF] = multipleEpochUKFv1(UKFepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,UKFrep));
+toc;disp('UKF Training Done.')
+yUKF = yUKF(:,end);
 
 %% OT Code
 % TO-DO
-tic;[yOTF, NN_OTF] = multipleEpochOTFv1(OTFepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,OTFrep));
-toc;disp('OT Training Done.')
-yOTF = yOTF(:,end);
+% tic;[yOTF, NN_OTF] = multipleEpochOTFv1(OTFepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,OTFrep));
+% toc;disp('OT Training Done.')
+% yOTF = yOTF(:,end);
 
 % save('./data/AllNN.mat','NN_EKF','yEKF','NN_EnKF','yEnKF','NN_UKF','yUKF','y1','yMeas','NN_OTF','yOTF');
 

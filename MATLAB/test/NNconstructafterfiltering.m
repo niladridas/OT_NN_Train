@@ -6,10 +6,10 @@ clc; clear; close all;
 load('./data/E_En_U_KF_ref.mat');
 load('./data/OT_1_5_11_15.mat');
 % Calculating RMSE for each training method
-yEKFrmse = sqrt(squeeze(sum((yEKF-yMeas).*(yEKF-yMeas),1))./size(yMeas,1))';
-yEnKFrmse = sqrt(squeeze(sum((yEnKF-yMeas).*(yEnKF-yMeas),1))./size(yMeas,1))';
-yUKFrmse = sqrt(squeeze(sum((yUKF-yMeas).*(yUKF-yMeas),1))./size(yMeas,1))';
-yOTFrmse = sqrt(squeeze(sum((yOTF-yMeas).*(yOTF-yMeas),1))./size(yMeas,1))';
+yEKFrmse = sqrt(squeeze(sum((yEKF-repmat(yMeas,1,10,20)).*(yEKF-repmat(yMeas,1,10,20)),1))./size(yMeas,1))';
+yEnKFrmse = sqrt(squeeze(sum((yEnKF-repmat(yMeas,1,10,20)).*(yEnKF-repmat(yMeas,1,10,20)),1))./size(yMeas,1))';
+yUKFrmse = sqrt(squeeze(sum((yUKF-repmat(yMeas,1,10,20)).*(yUKF-repmat(yMeas,1,10,20)),1))./size(yMeas,1))';
+yOTFrmse = sqrt(squeeze(sum((yOTF-repmat(yMeas,1,10,10)).*(yOTF-repmat(yMeas,1,10,10)),1))./size(yMeas,1))';
 
 %% Find epoc and rep number for each trainig method
 EKFminimum = min(min(yEKFrmse));

@@ -42,8 +42,8 @@ save('./data/testresults.mat','y2','yEKFtest','yEnKFtest','yUKFtest');
 %% Plotting
 figure(1); hold on; box; grid;
 plot([yEKF;yEKFtest],'b--','LineWidth',1);
-plot(yEnKFtest,'k--','LineWidth',1);
-plot(yUKFtest,'g--','LineWidth',1);
-plot([y1;y2],'r','LineWidth',1);
+plot([yEnKF;yEnKFtest],'k--','LineWidth',1);
+plot([yUKF;yUKFtest],'g--','LineWidth',1);
+plot(y1(1:400),'r','LineWidth',1);
 legend('y_{EKF}','y_{EnKF}','y_{UKF}','y_{real}');
 drawnow;

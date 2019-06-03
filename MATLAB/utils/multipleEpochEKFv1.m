@@ -9,7 +9,6 @@ for iEp = 1:maxEpoch
     for k = 1:kEnd
         % clc; 
         % fprintf('EKF: Epoch = %d, k = %d.\n',iEp,k);
-
         % EKF Propagation/Prediction
         x_pr = Ast*x_prev; % x-(k) a priori state estimate
         P_pr = Ast*P_prev*Ast' + Q; % P-(k) a priori state covariance matrix

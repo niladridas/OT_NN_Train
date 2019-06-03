@@ -1,0 +1,716 @@
+
+Currently Loaded Modules:
+  1) Matlab/R2017a
+
+
+
+MDCE_MATLAB_EXE=/software/hprc/Matlab/R2017a/bin/worker
+MDCE_JOB_LOCATION=Job10
+MDCE_DECODE_FUNCTION=parallel.cluster.generic.communicatingDecodeFcn
+MDCE_MATLAB_ARGS=-parallel
+MDCE_CMR=/software/hprc/Matlab/R2017a
+MDCE_TOTAL_TASKS=4
+MDCE_STORAGE_CONSTRUCTOR=makeFileStorageObject
+MDCE_STORAGE_LOCATION=/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE
+MDCE_DEBUG=true
+MDCE_MATLAB_EXE=/software/hprc/Matlab/R2017a/bin/worker
+MATLABDIR=/software/hprc/Matlab
+MATLABROOT=/software/hprc/Matlab/R2017a
+MATLABCLUSTER=ada
+MATLABVERSION=R2017a
+MDCE_MATLAB_ARGS=-parallel
+/software/lsf/9.1/linux2.6-glibc2.3-x86_64/bin:/software/hprc/Matlab/bin:/software/hprc/Matlab/R2017a/bin:/software/lsf/9.1/linux2.6-glibc2.3-x86_64/etc:/opt/TurboVNC/bin:/software/tamusc/local/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/lpp/mmfs/bin:/opt/ibutils/bin
+Calculating SMPD_HOSTS and MACHINE_ARG
+Starting SMPD on  nxt1357 ...
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null nxt1357 "/software/hprc/Matlab/R2017a/bin/mw_smpd" -s -phrase MATLAB -port 24696
+Warning: Permanently added 'nxt1357,10.70.13.57' (RSA) to the list of known hosts.
+All SMPDs launched
+"/software/hprc/Matlab/R2017a/bin/mw_mpiexec" -phrase MATLAB -port 24696 -l -hosts 1 nxt1357 4 -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION,MDCE_DEBUG,MDCE_LICENSE_NUMBER,MLM_WEB_LICENSE,MLM_WEB_USER_CRED,MLM_WEB_ID "/software/hprc/Matlab/R2017a/bin/worker" -parallel
+[3]                            < M A T L A B (R) >
+[3]                  Copyright 1984-2017 The MathWorks, Inc.
+[3]                   R2017a (9.2.0.538062) 64-bit (glnxa64)
+[3]                             February 23, 2017
+[2]                            < M A T L A B (R) >
+[2]                  Copyright 1984-2017 The MathWorks, Inc.
+[2]                   R2017a (9.2.0.538062) 64-bit (glnxa64)
+[2]                             February 23, 2017
+[1]                            < M A T L A B (R) >
+[1]                  Copyright 1984-2017 The MathWorks, Inc.
+[1]                   R2017a (9.2.0.538062) 64-bit (glnxa64)
+[1]                             February 23, 2017
+[0]                            < M A T L A B (R) >
+[0]                  Copyright 1984-2017 The MathWorks, Inc.
+[0]                   R2017a (9.2.0.538062) 64-bit (glnxa64)
+[0]                             February 23, 2017
+[3] 
+[3]To get started, type one of these: helpwin, helpdesk, or demo.
+[3]For product information, visit www.mathworks.com.
+[3] 
+[3]... Interactive Matlab session, multi threading reduced to 4
+[2] 
+[2]To get started, type one of these: helpwin, helpdesk, or demo.
+[2]For product information, visit www.mathworks.com.
+[2] 
+[2]... Interactive Matlab session, multi threading reduced to 4
+[1] 
+[1]To get started, type one of these: helpwin, helpdesk, or demo.
+[1]For product information, visit www.mathworks.com.
+[1] 
+[1]... Interactive Matlab session, multi threading reduced to 4
+[0] 
+[0]To get started, type one of these: helpwin, helpdesk, or demo.
+[0]For product information, visit www.mathworks.com.
+[0] 
+[0]... Interactive Matlab session, multi threading reduced to 4
+[3]2019-06-01 23:39:24 | About to evaluate task with DistcompEvaluateFileTask
+[0]2019-06-01 23:39:24 | About to evaluate task with DistcompEvaluateFileTask
+[2]2019-06-01 23:39:24 | About to evaluate task with DistcompEvaluateFileTask
+[1]2019-06-01 23:39:24 | About to evaluate task with DistcompEvaluateFileTask
+[3]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core
+[0]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core
+[1]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core
+[2]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core
+[3]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core/iSetup
+[0]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core/iSetup
+[2]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core/iSetup
+[1]2019-06-01 23:39:25 | Enter distcomp_evaluate_filetask_core/iSetup
+[1]2019-06-01 23:39:25 | This process will exit on any fault.
+[2]2019-06-01 23:39:25 | This process will exit on any fault.
+[3]2019-06-01 23:39:25 | This process will exit on any fault.
+[0]2019-06-01 23:39:25 | This process will exit on any fault.
+[1]2019-06-01 23:39:25 | This process will exit when its parent process dies.
+[3]2019-06-01 23:39:25 | This process will exit when its parent process dies.
+[2]2019-06-01 23:39:25 | This process will exit when its parent process dies.
+[0]2019-06-01 23:39:25 | This process will exit when its parent process dies.
+[2]2019-06-01 23:39:25 | About to initialize MPI.
+[1]2019-06-01 23:39:25 | About to initialize MPI.
+[0]2019-06-01 23:39:25 | About to initialize MPI.
+[3]2019-06-01 23:39:25 | About to initialize MPI.
+[2]2019-06-01 23:39:25 | About to call mpiParallelSessionStarting.
+[1]2019-06-01 23:39:25 | About to call mpiParallelSessionStarting.
+[3]2019-06-01 23:39:25 | About to call mpiParallelSessionStarting.
+[0]2019-06-01 23:39:25 | About to call mpiParallelSessionStarting.
+[2]2019-06-01 23:39:25 | Finished initializing MPI.
+[1]2019-06-01 23:39:25 | Finished initializing MPI.
+[3]2019-06-01 23:39:25 | Finished initializing MPI.
+[0]2019-06-01 23:39:25 | Finished initializing MPI.
+[1]2019-06-01 23:39:25 | About to call decode function.
+[3]2019-06-01 23:39:25 | About to call decode function.
+[2]2019-06-01 23:39:25 | About to call decode function.
+[0]2019-06-01 23:39:25 | About to call decode function.
+[1]2019-06-01 23:39:25 | In parallel.cluster.generic.communicatingDecodeFcn
+[3]2019-06-01 23:39:25 | In parallel.cluster.generic.communicatingDecodeFcn
+[2]2019-06-01 23:39:25 | In parallel.cluster.generic.communicatingDecodeFcn
+[0]2019-06-01 23:39:25 | In parallel.cluster.generic.communicatingDecodeFcn
+[3]2019-06-01 23:39:25 | Setting the desktop client to a new client with username 
+[2]2019-06-01 23:39:25 | Setting the desktop client to a new client with username 
+[1]2019-06-01 23:39:25 | Setting the desktop client to a new client with username 
+[0]2019-06-01 23:39:25 | Setting the desktop client to a new client with username 
+[1]2019-06-01 23:39:25 | About to construct the storage object using constructor "makeFileStorageObject" and location "/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE"
+[3]2019-06-01 23:39:25 | About to construct the storage object using constructor "makeFileStorageObject" and location "/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE"
+[2]2019-06-01 23:39:25 | About to construct the storage object using constructor "makeFileStorageObject" and location "/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE"
+[0]2019-06-01 23:39:25 | About to construct the storage object using constructor "makeFileStorageObject" and location "/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE"
+[0]2019-06-01 23:39:26 | About to find job and task using locations "Job10" and "Job10/Task1"
+[3]2019-06-01 23:39:26 | About to find job and task using locations "Job10" and "Job10/Task4"
+[2]2019-06-01 23:39:26 | About to find job and task using locations "Job10" and "Job10/Task3"
+[1]2019-06-01 23:39:26 | About to find job and task using locations "Job10" and "Job10/Task2"
+[2]2019-06-01 23:39:27 | Setting the TaskEvaluator to the CJSStreamingEvaluator
+[0]2019-06-01 23:39:27 | Setting the TaskEvaluator to the CJSStreamingEvaluator
+[1]2019-06-01 23:39:27 | Setting the TaskEvaluator to the CJSStreamingEvaluator
+[3]2019-06-01 23:39:27 | Setting the TaskEvaluator to the CJSStreamingEvaluator
+[0]2019-06-01 23:39:27 | Setting number of computational threads to 4.
+[2]2019-06-01 23:39:27 | Setting number of computational threads to 4.
+[1]2019-06-01 23:39:27 | Setting number of computational threads to 4.
+[3]2019-06-01 23:39:27 | Setting number of computational threads to 4.
+[2]2019-06-01 23:39:27 | MATLAB Drive Enabled 0
+[3]2019-06-01 23:39:27 | MATLAB Drive Enabled 0
+[1]2019-06-01 23:39:27 | MATLAB Drive Enabled 0
+[0]2019-06-01 23:39:27 | MATLAB Drive Enabled 0
+[2]2019-06-01 23:39:27 | Completed pre-execution phase
+[3]2019-06-01 23:39:27 | Completed pre-execution phase
+[1]2019-06-01 23:39:27 | Completed pre-execution phase
+[0]2019-06-01 23:39:27 | Completed pre-execution phase
+[2]2019-06-01 23:39:27 | About to pPreJobEvaluate
+[1]2019-06-01 23:39:27 | About to pPreJobEvaluate
+[0]2019-06-01 23:39:27 | About to pPreJobEvaluate
+[3]2019-06-01 23:39:27 | About to pPreJobEvaluate
+[0]Warning: The system time zone setting, 'US/Central', does not specify a single time zone unambiguously. It will be treated as 'America/Chicago'. See the <a href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for details about specifying time zones.
+[0]> In verifyTimeZone (line 23)
+[0]  In datetime (line 515)
+[0]  In preCJSJob
+[0]  In parallel.job.CJSCommunicatingJob/pPreJobEvaluate (line 143)
+[0]  In dctEvaluateTask (line 23)
+[0]  In distcomp_evaluate_filetask_core>iDoTask (line 153)
+[0]  In distcomp_evaluate_filetask_core (line 52)
+[2]2019-06-01 23:39:28 | About to pPreTaskEvaluate
+[0]2019-06-01 23:39:28 | About to pPreTaskEvaluate
+[1]2019-06-01 23:39:28 | About to pPreTaskEvaluate
+[3]2019-06-01 23:39:28 | About to pPreTaskEvaluate
+[2]Warning: The system time zone setting, 'US/Central', does not specify a single time zone unambiguously. It will be treated as 'America/Chicago'. See the <a href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for details about specifying time zones.
+[2]> In verifyTimeZone (line 23)
+[2]  In datetime (line 515)
+[1]Warning: The system time zone setting, 'US/Central', does not specify a single time zone unambiguously. It will be treated as 'America/Chicago'. See the <a href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for details about specifying time zones.
+[1]> In verifyTimeZone (line 23)
+[3]Warning: The system time zone setting, 'US/Central', does not specify a single time zone unambiguously. It will be treated as 'America/Chicago'. See the <a href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for details about specifying time zones.
+[3]> In verifyTimeZone (line 23)
+[1]  In datetime (line 515)
+[3]  In datetime (line 515)
+[2]  In parallel.task.CJSTask/pPreTaskEvaluate (line 195)
+[2]  In dctEvaluateTask (line 38)
+[2]  In distcomp_evaluate_filetask_core>iDoTask (line 153)
+[2]  In distcomp_evaluate_filetask_core (line 52)
+[3]  In parallel.task.CJSTask/pPreTaskEvaluate (line 195)
+[1]  In parallel.task.CJSTask/pPreTaskEvaluate (line 195)
+[3]  In dctEvaluateTask (line 38)
+[1]  In dctEvaluateTask (line 38)
+[3]  In distcomp_evaluate_filetask_core>iDoTask (line 153)
+[1]  In distcomp_evaluate_filetask_core>iDoTask (line 153)
+[3]  In distcomp_evaluate_filetask_core (line 52)
+[1]  In distcomp_evaluate_filetask_core (line 52)
+[0]2019-06-01 23:39:28 | About to add job dependencies
+[0]2019-06-01 23:39:28 | > JobPathHelper.addAdditionalPaths
+[0]2019-06-01 23:39:28 | > JobPathHelper.getPathsToAdd
+[0]2019-06-01 23:39:28 | < JobPathHelper.getPathsToAdd ~isMATLABDriveEnabledOnWorker
+[2]2019-06-01 23:39:28 | About to add job dependencies
+[3]2019-06-01 23:39:28 | About to add job dependencies
+[1]2019-06-01 23:39:28 | About to add job dependencies
+[0]2019-06-01 23:39:28 | Not adding path dependencies as there is no change required to the path.
+[0]2019-06-01 23:39:28 | < JobPathHelper.addAdditionalPaths
+[2]2019-06-01 23:39:28 | > JobPathHelper.addAdditionalPaths
+[2]2019-06-01 23:39:28 | > JobPathHelper.getPathsToAdd
+[3]2019-06-01 23:39:28 | > JobPathHelper.addAdditionalPaths
+[1]2019-06-01 23:39:28 | > JobPathHelper.addAdditionalPaths
+[3]2019-06-01 23:39:28 | > JobPathHelper.getPathsToAdd
+[1]2019-06-01 23:39:28 | > JobPathHelper.getPathsToAdd
+[2]2019-06-01 23:39:28 | < JobPathHelper.getPathsToAdd ~isMATLABDriveEnabledOnWorker
+[3]2019-06-01 23:39:28 | < JobPathHelper.getPathsToAdd ~isMATLABDriveEnabledOnWorker
+[1]2019-06-01 23:39:28 | < JobPathHelper.getPathsToAdd ~isMATLABDriveEnabledOnWorker
+[2]2019-06-01 23:39:28 | Not adding path dependencies as there is no change required to the path.
+[2]2019-06-01 23:39:28 | < JobPathHelper.addAdditionalPaths
+[3]2019-06-01 23:39:28 | Not adding path dependencies as there is no change required to the path.
+[3]2019-06-01 23:39:28 | < JobPathHelper.addAdditionalPaths
+[1]2019-06-01 23:39:28 | Not adding path dependencies as there is no change required to the path.
+[1]2019-06-01 23:39:28 | < JobPathHelper.addAdditionalPaths
+[0]2019-06-01 23:39:28 | About to add dependencies to path:
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[0]C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[0]C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[0]2019-06-01 23:39:28 | Adding dependency paths:
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd
+[0]/tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat with tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat in C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m with tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[2]2019-06-01 23:39:28 | About to add dependencies to path:
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[2]C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[2]C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[3]2019-06-01 23:39:28 | About to add dependencies to path:
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[3]C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[3]C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[2]2019-06-01 23:39:28 | Adding dependency paths:
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd
+[2]/tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[1]2019-06-01 23:39:28 | About to add dependencies to path:
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[1]C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[1]C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat with tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat in C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[3]2019-06-01 23:39:28 | Adding dependency paths:
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd
+[3]/tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[1]2019-06-01 23:39:28 | Adding dependency paths:
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd
+[1]/tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat with tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat in C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat with tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat in C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/cvx/functions/vec_/vec.m with tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m in C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m with tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes with tp040d5f12_f159_4950_b44c_6454bd4d84a8 in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m with tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[0]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m with tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+[0]2019-06-01 23:39:28 | Created dependency map:
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/backprop.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/biasup.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/EnKF.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/eq_wsamples.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/forwardprop.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/getSigmaPts.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/measModel.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKF.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKFv1.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKF.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKFv1.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochOTF.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKF.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKFv1.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nn2param.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/NNconstruct.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nnJacobian.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/OTF.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/param2nn.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoid.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoidot.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightbiasup.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightup.m
+[0]  C:/_WORK_SPACE/cvx/functions/vec_/vec.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/eq_wsamples.m
+[0]  C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m -> /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m with tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m with tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/cvx/functions/vec_/vec.m with tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m in C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m with tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes with tp040d5f12_f159_4950_b44c_6454bd4d84a8 in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp0df494a0_f193_4198_8f92_d444ad53bccd in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/cvx/functions/vec_/vec.m with tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m in C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[2]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m with tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/cvx/functions/vec_/vec.m with tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m in C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m with tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes with tp040d5f12_f159_4950_b44c_6454bd4d84a8 in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m with tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+[2]2019-06-01 23:39:28 | Created dependency map:
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/backprop.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/biasup.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/EnKF.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/eq_wsamples.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/forwardprop.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/getSigmaPts.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/measModel.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKF.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKFv1.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKF.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKFv1.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochOTF.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKF.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKFv1.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nn2param.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/NNconstruct.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nnJacobian.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/OTF.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/param2nn.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoid.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoidot.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightbiasup.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightup.m
+[2]  C:/_WORK_SPACE/cvx/functions/vec_/vec.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/eq_wsamples.m
+[2]  C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m -> /tmp/tpf51a8001_2f24_42b3_a814_e75efcaf1d6crp5836/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[3]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m with tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes with tp040d5f12_f159_4950_b44c_6454bd4d84a8 in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+[1]2019-06-01 23:39:28 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m with tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+[3]2019-06-01 23:39:28 | Created dependency map:
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/backprop.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/biasup.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/EnKF.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/eq_wsamples.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/forwardprop.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/getSigmaPts.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/measModel.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKF.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKFv1.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKF.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKFv1.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochOTF.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKF.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKFv1.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nn2param.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/NNconstruct.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nnJacobian.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/OTF.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/param2nn.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoid.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoidot.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightbiasup.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightup.m
+[3]  C:/_WORK_SPACE/cvx/functions/vec_/vec.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/eq_wsamples.m
+[3]  C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m -> /tmp/tp15c3e1ef_a5ba_4114_8782_8a6d784c7609rp5835/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[1]2019-06-01 23:39:28 | Created dependency map:
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp989c6113_0786_482b_96b0_f266a2a2d2ec/trained_NN_complete_data.mat
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/backprop.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/biasup.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/CderW.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/EnKF.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/eq_wsamples.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/forwardprop.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/getSigmaPts.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/measModel.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKF.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEKFv1.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKF.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochEnKFv1.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochOTF.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKF.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/multipleEpochUKFv1.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nn2param.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/NNconstruct.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/nnJacobian.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/OTF.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/param2nn.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoid.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/sigmoidot.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightbiasup.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp0df494a0_f193_4198_8f92_d444ad53bccd/weightup.m
+[1]  C:/_WORK_SPACE/cvx/functions/vec_/vec.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tpfccd3060_3c63_4d6e_95c9_72de7959674a/vec.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/enkf_samples.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp040d5f12_f159_4950_b44c_6454bd4d84a8/eq_wsamples.m
+[1]  C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m -> /tmp/tpadf5159d_39c6_4432_8829_104b44bf01bcrp5837/a/tp7c8c6d80_e4e1_444f_88bd_834f2c8687f8/trainingUsingFilters_HPRC.m
+[0]2019-06-01 23:39:28 | Calling clear('functions'), and closing simulink models
+[2]2019-06-01 23:39:28 | Calling clear('functions'), and closing simulink models
+[3]2019-06-01 23:39:28 | Calling clear('functions'), and closing simulink models
+[1]2019-06-01 23:39:28 | Calling clear('functions'), and closing simulink models
+[0]2019-06-01 23:39:28 | About to call jobStartup
+[0]2019-06-01 23:39:28 | About to push FileWriter on stack
+[2]2019-06-01 23:39:28 | About to call jobStartup
+[3]2019-06-01 23:39:28 | About to call jobStartup
+[1]2019-06-01 23:39:28 | About to call jobStartup
+[0]2019-06-01 23:39:28 | FileWriter popped off stack
+[2]2019-06-01 23:39:28 | About to push FileWriter on stack
+[0]2019-06-01 23:39:28 | About to call taskStartup
+[3]2019-06-01 23:39:28 | About to push FileWriter on stack
+[1]2019-06-01 23:39:28 | About to push FileWriter on stack
+[2]2019-06-01 23:39:28 | FileWriter popped off stack
+[2]2019-06-01 23:39:28 | About to call taskStartup
+[3]2019-06-01 23:39:28 | FileWriter popped off stack
+[1]2019-06-01 23:39:28 | FileWriter popped off stack
+[3]2019-06-01 23:39:28 | About to call taskStartup
+[1]2019-06-01 23:39:28 | About to call taskStartup
+[0]2019-06-01 23:39:28 | About to push FileWriter on stack
+[0]2019-06-01 23:39:28 | FileWriter popped off stack
+[0]2019-06-01 23:39:28 | About to get evaluation data
+[2]2019-06-01 23:39:28 | About to push FileWriter on stack
+[2]2019-06-01 23:39:28 | FileWriter popped off stack
+[3]2019-06-01 23:39:28 | About to push FileWriter on stack
+[2]2019-06-01 23:39:28 | About to get evaluation data
+[1]2019-06-01 23:39:28 | About to push FileWriter on stack
+[3]2019-06-01 23:39:28 | FileWriter popped off stack
+[3]2019-06-01 23:39:28 | About to get evaluation data
+[1]2019-06-01 23:39:28 | FileWriter popped off stack
+[1]2019-06-01 23:39:28 | About to get evaluation data
+[0]2019-06-01 23:39:29 | About to pInstantiatePool
+[2]2019-06-01 23:39:29 | About to pInstantiatePool
+[3]2019-06-01 23:39:29 | About to pInstantiatePool
+[1]2019-06-01 23:39:29 | About to pInstantiatePool
+[2]2019-06-01 23:39:29 | Creating session with strategy: ALL_WORKERS_CONNECT_TO_CLIENT
+[1]2019-06-01 23:39:29 | Creating session with strategy: ALL_WORKERS_CONNECT_TO_CLIENT
+[3]2019-06-01 23:39:29 | Creating session with strategy: ALL_WORKERS_CONNECT_TO_CLIENT
+[3]2019-06-01 23:39:29 | >> parallel.internal.getJavaFutureInterruptibly: timeout Inf seconds
+[2]2019-06-01 23:39:29 | >> parallel.internal.getJavaFutureInterruptibly: timeout Inf seconds
+[1]2019-06-01 23:39:29 | >> parallel.internal.getJavaFutureInterruptibly: timeout Inf seconds
+[1]2019-06-01 23:39:29 | << parallel.internal.getJavaFutureInterruptibly done: 1 shouldInterruptFcn 0 timeoutExpired 0
+[3]2019-06-01 23:39:29 | << parallel.internal.getJavaFutureInterruptibly done: 1 shouldInterruptFcn 0 timeoutExpired 0
+[2]2019-06-01 23:39:29 | << parallel.internal.getJavaFutureInterruptibly done: 1 shouldInterruptFcn 0 timeoutExpired 0
+[0]2019-06-01 23:39:30 | Pool instantiation complete
+[0]2019-06-01 23:39:30 | About to call poolStartup
+[0]2019-06-01 23:39:30 | About to push FileWriter on stack
+[0]2019-06-01 23:39:30 | FileWriter popped off stack
+[0]2019-06-01 23:39:30 | Begin task function
+[0]2019-06-01 23:39:30 | About to push FileWriter on stack
+[0]2019-06-01 23:40:21 | FileWriter popped off stack
+[0]2019-06-01 23:40:21 | End task function
+[0]2019-06-01 23:40:21 | dctEvaluateFunctionArray calling: @()taskPostFcn(runprop.TaskEvaluator) with args
+[0]2019-06-01 23:40:21 | About to shutdown pool
+[0]Sending a stop signal to all the labs...
+[0]2019-06-01 23:40:21 | Pool shutdown complete - labs shutdown OK == 1
+[0]2019-06-01 23:40:21 | Changing directory back to original working directory: /general/home/vedang.deshpande
+[0]2019-06-01 23:40:21 | About to call taskFinish
+[0]2019-06-01 23:40:21 | About to push FileWriter on stack
+[0]2019-06-01 23:40:21 | FileWriter popped off stack
+[0]2019-06-01 23:40:21 | dctEvaluateFunctionArray done.
+[0]2019-06-01 23:40:21 | dctEvaluateFunctionArray calling: iFinishTask with args
+[0]2019-06-01 23:40:21 | About to call pPostTaskEvaluate
+[0]Warning: The system time zone setting, 'US/Central', does not specify a single time zone unambiguously. It will be treated as 'America/Chicago'. See the <a href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for details about specifying time zones.
+[0]> In verifyTimeZone (line 23)
+[0]  In datetime (line 515)
+[0]  In parallel.task.CJSTask/pPostTaskEvaluate (line 200)
+[0]  In distcomp_evaluate_filetask_core>iFinishTask (line 183)
+[0]  In distcomp_evaluate_filetask_core>@(job,task,out)iFinishTask(handlers,job,task,out,originalPath) (line 152)
+[0]  In dctEvaluateTask>iFinishTask (line 114)
+[0]  In dctEvaluateFunctionArray (line 18)
+[0]  In dctEvaluateTask (line 101)
+[0]  In distcomp_evaluate_filetask_core>iDoTask (line 153)
+[0]  In distcomp_evaluate_filetask_core (line 52)
+[0]2019-06-01 23:40:21 | About to call pPostJobEvaluate
+[0]2019-06-01 23:40:23 | dctEvaluateFunctionArray done.
+[0]2019-06-01 23:40:23 | dctEvaluateFunctionArray calling: removeDirectory with args
+[0]2019-06-01 23:40:23 | dctEvaluateFunctionArray done.
+[0]2019-06-01 23:40:23 | dctEvaluateFunctionArray calling: removeDirectory with args
+[0]2019-06-01 23:40:23 | Removed /tmp/tpe084b3bb_6d74_4d07_8d6f_a9bb8eef28e0rp5838 with result: 1, message: 
+[0]2019-06-01 23:40:23 | dctEvaluateFunctionArray done.
+[0]2019-06-01 23:40:23 | dctEvaluateFunctionArray calling: iExitFunction with args
+[0]2019-06-01 23:40:23 | About to exit MATLAB normally
+[0]2019-06-01 23:40:23 | About to exit with code: 0
+
+Stopping SMPD on  nxt1357 ...
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null nxt1357 "/software/hprc/Matlab/R2017a/bin/mw_smpd" -shutdown -phrase MATLAB -port 24696
+Warning: Permanently added 'nxt1357,10.70.13.57' (RSA) to the list of known hosts.
+Exiting with code: 0
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@nxt1357>
+Subject: Job 8374696: <Job10> in cluster <Main_Compute> Done
+
+Job <Job10> was submitted from host <login4> by user <vedang.deshpande> in cluster <Main_Compute>.
+Job was executed on host(s) <4*nxt1357>, in queue <sn_regular>, as user <vedang.deshpande> in cluster <Main_Compute>.
+</home/vedang.deshpande> was used as the home directory.
+</general/home/vedang.deshpande> was used as the working directory.
+Started at Sat Jun  1 23:39:05 2019
+Results reported on Sat Jun  1 23:40:25 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE/Job10/rcommunicatingJobWrapper.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.35 sec.
+    Max Memory :                                 13 MB
+    Average Memory :                             12.75 MB
+    Total Requested Memory :                     32000.00 MB
+    Delta Memory :                               31987.00 MB
+    Max Processes :                              4
+    Max Threads :                                5
+
+The output (if any) is above this job summary.
+

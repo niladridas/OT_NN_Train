@@ -1,0 +1,30 @@
+#!/bin/sh
+
+source /etc/profile.d/lsf.sh /etc/profile.d/tamusc_profile.sh; 
+
+mkdir -p /scratch/user/vedang.deshpande/MatlabJobs/WORKDIR
+
+module load Matlab/R2017a; 
+MDCE_DECODE_FUNCTION=parallel.cluster.generic.communicatingDecodeFcn
+export MDCE_DECODE_FUNCTION
+MDCE_STORAGE_CONSTRUCTOR=makeFileStorageObject
+export MDCE_STORAGE_CONSTRUCTOR
+MDCE_JOB_LOCATION=Job9
+export MDCE_JOB_LOCATION
+MDCE_MATLAB_EXE=$MATLABROOT/bin/worker
+export MDCE_MATLAB_EXE
+MDCE_MATLAB_ARGS=-parallel
+export MDCE_MATLAB_ARGS
+MDCE_DEBUG=true
+export MDCE_DEBUG
+MLM_WEB_LICENSE=false
+export MLM_WEB_LICENSE
+MDCE_STORAGE_LOCATION=/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE
+export MDCE_STORAGE_LOCATION
+MDCE_CMR=$MATLABROOT
+export MDCE_CMR
+MDCE_TOTAL_TASKS=2
+export MDCE_TOTAL_TASKS
+echo "`date "+%x %R"` $USER workers=2,pernode=0,threads=2,gpu=0,walltime=3:0" >> $MATLABDIR/log/tamuremote.log; 
+
+bsub -J Job9 -o '/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE/Job9/Job9.log' -n 2 -M 16000 -R rusage[mem=16000] -R "span[ptile=2]" -W 3:0  -x  '/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE/Job9/rcommunicatingJobWrapper.sh'

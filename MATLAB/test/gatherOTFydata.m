@@ -15,5 +15,5 @@ yOTF(:,:,1:5) = D1.yOTF(:,:,1:5);
 yOTF(:,:,6:10) = D2.yOTF(:,:,6:10);
 yOTF(:,:,11:15) = D2.yOTF(:,:,11:15);
 yOTF(:,:,16:20) = D2.yOTF(:,:,16:20);
-save('./data/OT_1_5_11_15.mat','yOTF');
+save('./data/OT_1_20.mat','yOTF');
 

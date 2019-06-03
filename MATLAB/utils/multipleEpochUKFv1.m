@@ -29,7 +29,7 @@ for iEp = 1:maxEpoch
 %         xSP_pr = xSP;
 
         x_pr = xSP_pr*Wm'; % a priori state estimate = weighted sum of prior sigma pts
-        tmpP1 = xSP_pr - x_pr; P_pr = zeros(nx,nx);
+        tmpP1 = xSP_pr - repmat(x_pr,1,size(xSP_pr,2)); P_pr = zeros(nx,nx);
         for isp = 1:nPt
             P_pr = P_pr + Wc(isp)*(tmpP1(:,isp)*tmpP1(:,isp)');
         end

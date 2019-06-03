@@ -1,9 +1,0 @@
-OTF Execution
-2019-06-01 23:32:19 | >> parallel.internal.getJavaFutureInterruptibly: timeout Inf seconds
-2019-06-01 23:32:19 | << parallel.internal.getJavaFutureInterruptibly done: 1 shouldInterruptFcn 0 timeoutExpired 0
-OTF: Rep = 2
-OTF: Rep = 3
-OTF: Rep = 1
-OTF: Rep = 4
-OTF Done.
-Elapsed time is 50.943057 seconds.

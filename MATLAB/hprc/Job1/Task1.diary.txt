@@ -1,4 +1,0 @@
-OTF Execution
-OTF: Rep = 1
-  Epoch = 1.
-  k = 1.

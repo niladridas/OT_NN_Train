@@ -28,7 +28,9 @@ function P = opt_map(X1,W1,W2)
     % T = linprog(D_vec,[],[],[A2;A1],[W1';W2'],zeros(Ns*Ns,1),[],[],options);
     options.Simplex = 'dual';
     options.Display = 'off';
+    % disp('setting linprog')
     T = linprog(D_vec,[],[],[A2;A1],[W1';W2'],zeros(Ns*Ns,1),[],options);
+    % disp('linprog done')
     P = T./repmat(W1',Ns,1); 
     P = reshape(P,[Ns,Ns]);
 end

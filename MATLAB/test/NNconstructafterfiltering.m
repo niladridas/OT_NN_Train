@@ -49,7 +49,7 @@ kEnd = length(yMeas);
 % tic ;[yEKF,NN_EKF] = multipleEpochEKFv1(EFKepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,EKFrep));
 % toc;disp('EKF Training Done.')
 % yEKF = yEKF(:,end);
-
+% 
 % %% EnKF Code
 % tic;[yEnKF,NN_EnKF] = multipleEpochEnKFv1(EnFKepoc,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,EnKFrep));
 % toc;disp('EnKF Training Done.')
@@ -62,7 +62,8 @@ kEnd = length(yMeas);
 
 %% OT Code
 % TO-DO
-tic;[yOTF, NN_OTF] = multipleEpochOTFv1(OTFepoc,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,OTFrep));
+NN_OTF = NNconstruct(ni,Ln,OTFrep);
+tic;[yOTF, NN_OTF] = multipleEpochOTFv1(OTFepoc,kEnd,nSample,P0,Q,R,yMeas,iP,NN_OTF);
 toc;disp('OT Training Done.')
 yOTF = yOTF(:,end);
 

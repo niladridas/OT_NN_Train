@@ -1,0 +1,218 @@
+Executing: /software/hprc/Matlab/R2017a/bin/worker 
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.538062) 64-bit (glnxa64)
+                             February 23, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+2019-06-01 23:06:06 | About to evaluate task with DistcompEvaluateFileTask
+2019-06-01 23:06:06 | Enter distcomp_evaluate_filetask_core
+2019-06-01 23:06:06 | Enter distcomp_evaluate_filetask_core/iSetup
+2019-06-01 23:06:06 | This process will exit on any fault.
+2019-06-01 23:06:06 | This process will exit when its parent process dies.
+2019-06-01 23:06:06 | About to call decode function.
+2019-06-01 23:06:06 | In parallel.cluster.generic.independentDecodeFcn
+2019-06-01 23:06:07 | Setting the desktop client to a new client with username 
+2019-06-01 23:06:07 | About to construct the storage object using constructor "makeFileStorageObject" and location "/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE"
+2019-06-01 23:06:09 | About to find job and task using locations "Job3" and "Job3/Task1"
+2019-06-01 23:06:10 | Setting the TaskEvaluator to the CJSStreamingEvaluator
+2019-06-01 23:06:10 | Setting number of computational threads to 2.
+2019-06-01 23:06:10 | MATLAB Drive Enabled 0
+2019-06-01 23:06:10 | Completed pre-execution phase
+2019-06-01 23:06:10 | About to pPreJobEvaluate
+Warning: The system time zone setting, 'US/Central', does not specify a single time zone unambiguously. It will be treated as 'America/Chicago'. See the <a href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for details about specifying time zones.
+> In verifyTimeZone (line 23)
+  In datetime (line 515)
+  In preCJSJob
+  In parallel.job.CJSIndependentJob/pPreJobEvaluate (line 121)
+  In dctEvaluateTask (line 23)
+  In distcomp_evaluate_filetask_core>iDoTask (line 153)
+  In distcomp_evaluate_filetask_core (line 52)
+2019-06-01 23:06:11 | About to pPreTaskEvaluate
+2019-06-01 23:06:11 | About to add job dependencies
+2019-06-01 23:06:11 | > JobPathHelper.addAdditionalPaths
+2019-06-01 23:06:11 | > JobPathHelper.getPathsToAdd
+2019-06-01 23:06:11 | < JobPathHelper.getPathsToAdd ~isMATLABDriveEnabledOnWorker
+2019-06-01 23:06:11 | Not adding path dependencies as there is no change required to the path.
+2019-06-01 23:06:11 | < JobPathHelper.addAdditionalPaths
+2019-06-01 23:06:12 | About to add dependencies to path:
+C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+
+2019-06-01 23:06:12 | Adding dependency paths:
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tp3abe7a9c_33d0_4690_9848_5fa1026f80b3
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tp3abe7a9c_33d0_4690_9848_5fa1026f80b3/vec.m
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpca1c15a9_53dd_4a74_b929_5a9455ff1f51
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpca1c15a9_53dd_4a74_b929_5a9455ff1f51/enkf_samples.m
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tp69527082_b2a9_4144_a6e0_2c645a1b3385
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tp69527082_b2a9_4144_a6e0_2c645a1b3385/trained_NN_complete_data.mat
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpdc9d22e2_a514_4326_9c0e_6ec9a7e21fe9
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpdc9d22e2_a514_4326_9c0e_6ec9a7e21fe9/trainingUsingFilters_HPRC.m
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4
+/tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/CderW.m
+
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat with tp69527082_b2a9_4144_a6e0_2c645a1b3385/trained_NN_complete_data.mat in C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/CderW.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/cvx/functions/vec_/vec.m with tp3abe7a9c_33d0_4690_9848_5fa1026f80b3/vec.m in C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m with tpca1c15a9_53dd_4a74_b929_5a9455ff1f51/enkf_samples.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes with tpca1c15a9_53dd_4a74_b929_5a9455ff1f51 in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+2019-06-01 23:06:12 | Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m with tpdc9d22e2_a514_4326_9c0e_6ec9a7e21fe9/trainingUsingFilters_HPRC.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+2019-06-01 23:06:12 | Created dependency map:
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tp69527082_b2a9_4144_a6e0_2c645a1b3385/trained_NN_complete_data.mat
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/backprop.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/biasup.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/CderW.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/EnKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/eq_wsamples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/forwardprop.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/getSigmaPts.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/measModel.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/multipleEpochEKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/multipleEpochEKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/multipleEpochEnKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/multipleEpochEnKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/multipleEpochOTF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/multipleEpochUKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/multipleEpochUKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/nn2param.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/NNconstruct.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/nnJacobian.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/OTF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/param2nn.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/sigmoid.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/sigmoidot.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/weightbiasup.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpf1aadd1c_0daa_452a_81c6_dfc6df390ed4/weightup.m
+  C:/_WORK_SPACE/cvx/functions/vec_/vec.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tp3abe7a9c_33d0_4690_9848_5fa1026f80b3/vec.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpca1c15a9_53dd_4a74_b929_5a9455ff1f51/enkf_samples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpca1c15a9_53dd_4a74_b929_5a9455ff1f51/eq_wsamples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m -> /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990/a/tpdc9d22e2_a514_4326_9c0e_6ec9a7e21fe9/trainingUsingFilters_HPRC.m
+
+2019-06-01 23:06:12 | Calling clear('functions'), and closing simulink models
+2019-06-01 23:06:12 | About to call jobStartup
+2019-06-01 23:06:12 | About to push FileWriter on stack
+2019-06-01 23:06:12 | FileWriter popped off stack
+2019-06-01 23:06:12 | About to call taskStartup
+2019-06-01 23:06:12 | About to push FileWriter on stack
+2019-06-01 23:06:12 | FileWriter popped off stack
+2019-06-01 23:06:12 | About to get evaluation data
+2019-06-01 23:06:13 | Begin task function
+2019-06-01 23:06:13 | About to push FileWriter on stack
+2019-06-01 23:08:24 | FileWriter popped off stack
+2019-06-01 23:08:24 | End task function
+2019-06-01 23:08:24 | dctEvaluateFunctionArray calling: @()taskPostFcn(runprop.TaskEvaluator) with args
+2019-06-01 23:08:24 | About to call taskFinish
+2019-06-01 23:08:24 | About to push FileWriter on stack
+2019-06-01 23:08:24 | FileWriter popped off stack
+2019-06-01 23:08:24 | dctEvaluateFunctionArray done.
+2019-06-01 23:08:24 | dctEvaluateFunctionArray calling: iFinishTask with args
+2019-06-01 23:08:24 | About to call pPostTaskEvaluate
+Warning: The system time zone setting, 'US/Central', does not specify a single time zone unambiguously. It will be treated as 'America/Chicago'. See the <a href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for details about specifying time zones.
+> In verifyTimeZone (line 23)
+  In datetime (line 515)
+  In parallel.task.CJSTask/pPostTaskEvaluate (line 200)
+  In distcomp_evaluate_filetask_core>iFinishTask (line 183)
+  In distcomp_evaluate_filetask_core>@(job,task,out)iFinishTask(handlers,job,task,out,originalPath) (line 152)
+  In dctEvaluateTask>iFinishTask (line 114)
+  In dctEvaluateFunctionArray (line 18)
+  In dctEvaluateTask (line 101)
+  In distcomp_evaluate_filetask_core>iDoTask (line 153)
+  In distcomp_evaluate_filetask_core (line 52)
+2019-06-01 23:08:24 | About to call pPostJobEvaluate
+2019-06-01 23:08:24 | dctEvaluateFunctionArray done.
+2019-06-01 23:08:24 | dctEvaluateFunctionArray calling: removeDirectory with args
+2019-06-01 23:08:24 | dctEvaluateFunctionArray done.
+2019-06-01 23:08:24 | dctEvaluateFunctionArray calling: removeDirectory with args
+2019-06-01 23:08:24 | Removed /tmp/tp7ddbf937_c9bd_458a_85fc_8ee59d73dbe8rp2990 with result: 1, message: 
+2019-06-01 23:08:24 | dctEvaluateFunctionArray done.
+2019-06-01 23:08:24 | dctEvaluateFunctionArray calling: iExitFunction with args
+2019-06-01 23:08:24 | About to exit MATLAB normally
+2019-06-01 23:08:24 | About to exit with code: 0
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@nxt1901>
+Subject: Job 8374688: <Job3.1> in cluster <Main_Compute> Done
+
+Job <Job3.1> was submitted from host <login4> by user <vedang.deshpande> in cluster <Main_Compute>.
+Job was executed on host(s) <1*nxt1901>, in queue <mn_small>, as user <vedang.deshpande> in cluster <Main_Compute>.
+                            <1*nxt1515>
+</home/vedang.deshpande> was used as the home directory.
+</general/home/vedang.deshpande> was used as the working directory.
+Started at Sat Jun  1 23:05:00 2019
+Results reported on Sat Jun  1 23:08:25 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/scratch/user/vedang.deshpande/MatlabJobs/TAMUREMOTE/Job3/rindependentJobWrapper.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   158.67 sec.
+    Max Memory :                                 9191 MB
+    Average Memory :                             4929.41 MB
+    Total Requested Memory :                     32000.00 MB
+    Delta Memory :                               22809.00 MB
+    Max Processes :                              3
+    Max Threads :                                28
+
+The output (if any) is above this job summary.
+

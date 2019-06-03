@@ -27,8 +27,8 @@ R = var_meas*eye(ny); % Measurements noise covariance matrix
 y1 = y1(1:200);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 1;
-nRepeat = 1;
+maxEpoch = 10;
+nRepeat = 20;
 
 % figure(1); clf; hold on; box; grid;
 % plot(y1,'r','LineWidth',1) % Clean output
@@ -36,7 +36,7 @@ nRepeat = 1;
 % figure(2); clf; hold on; box; grid;
 % drawnow;
 
-nSample = 2*nx+1;
+nSample = 3*nx+1;
 Workers = nRepeat;
 if false
 %% EKF Code
@@ -103,10 +103,10 @@ end
 %% OTF Code
 disp('OTF Execution')
 tic
-yOTF=zeros(kEnd,maxEpoch,nRepeat);
-% parfor (iRep = 1:nRepeat,2)
-for iRep = 1
-    clc
+% yOTF=zeros(kEnd,maxEpoch,nRepeat);
+parfor (iRep = 1:nRepeat,Workers)
+% for iRep = 1
+    % clc
     fprintf('OTF: Rep = %d\n',iRep);
     yOTF(:,:,iRep) = multipleEpochOTF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
 end % repeat
@@ -118,7 +118,7 @@ for iRep = 1:nRepeat
 end
 disp('OTF Done.')
 toc
-save OTF_ref_6_to_10.mat
+save OTF_3n.mat
 % figure(1); hold on; box; grid;
 % plot(yOTF(:,Ep_OTF),'m--','LineWidth',1) 
 % figure(2); hold on; box; grid;

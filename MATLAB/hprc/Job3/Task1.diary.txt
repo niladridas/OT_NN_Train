@@ -1,0 +1,35 @@
+OTF Execution
+OTF: Rep = 1
+  Epoch = 1.
+  k = 1.
+setting linprog
+linprog done
+  k = 2.
+setting linprog
+linprog done
+  k = 3.
+setting linprog
+linprog done
+  k = 4.
+setting linprog
+linprog done
+  k = 5.
+setting linprog
+linprog done
+  k = 6.
+setting linprog
+linprog done
+  k = 7.
+setting linprog
+linprog done
+  k = 8.
+setting linprog
+linprog done
+  k = 9.
+setting linprog
+linprog done
+  k = 10.
+setting linprog
+linprog done
+OTF Done.
+Elapsed time is 130.858038 seconds.

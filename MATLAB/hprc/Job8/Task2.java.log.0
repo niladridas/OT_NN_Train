@@ -1,0 +1,976 @@
+2019 06 01 21:59:23.550 UTC | 4 | MATLAB: Setting number of computational threads to 16.
+2019 06 01 21:59:23.603 UTC | 4 | MATLAB: MATLAB Drive Enabled 0
+2019 06 01 21:59:23.604 UTC | 2 | MATLAB: Completed pre-execution phase
+2019 06 01 21:59:23.664 UTC | 4 | MATLAB: About to pPreJobEvaluate
+2019 06 01 21:59:24.463 UTC | 4 | MATLAB: About to pPreTaskEvaluate
+2019 06 01 21:59:24.575 UTC | 4 | MATLAB: About to add job dependencies
+2019 06 01 21:59:24.612 UTC | 5 | MATLAB: > JobPathHelper.addAdditionalPaths
+2019 06 01 21:59:24.614 UTC | 5 | MATLAB: > JobPathHelper.getPathsToAdd
+2019 06 01 21:59:24.625 UTC | 5 | MATLAB: < JobPathHelper.getPathsToAdd ~isMATLABDriveEnabledOnWorker
+2019 06 01 21:59:24.645 UTC | 4 | MATLAB: Not adding path dependencies as there is no change required to the path.
+2019 06 01 21:59:24.647 UTC | 5 | MATLAB: < JobPathHelper.addAdditionalPaths
+2019 06 01 21:59:25.060 UTC | 6 | null.null: MATLAB: About to add dependencies to path:
+C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+
+2019 06 01 21:59:25.064 UTC | 6 | null.null: MATLAB: Adding dependency paths:
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp3f47487f_7023_4a91_9510_6fcac1ea0b2c
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp3f47487f_7023_4a91_9510_6fcac1ea0b2c/vec.m
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tpa5ea4a20_1b9c_487d_ad6b_fda6723be921
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tpa5ea4a20_1b9c_487d_ad6b_fda6723be921/enkf_samples.m
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp2c4c39e4_6649_40c5_baca_5a30da815d4f
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp2c4c39e4_6649_40c5_baca_5a30da815d4f/trained_NN_complete_data.mat
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp0ed9e577_dc29_470f_80a2_ddbd431a6a19
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp0ed9e577_dc29_470f_80a2_ddbd431a6a19/trainingUsingFilters_HPRC.m
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e
+/tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/CderW.m
+
+2019 06 01 21:59:25.070 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat with tp2c4c39e4_6649_40c5_baca_5a30da815d4f/trained_NN_complete_data.mat in C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+2019 06 01 21:59:25.073 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+2019 06 01 21:59:25.080 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+2019 06 01 21:59:25.083 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/CderW.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+2019 06 01 21:59:25.090 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+2019 06 01 21:59:25.093 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+2019 06 01 21:59:25.094 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+2019 06 01 21:59:25.096 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+2019 06 01 21:59:25.097 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+2019 06 01 21:59:25.099 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+2019 06 01 21:59:25.100 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+2019 06 01 21:59:25.102 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+2019 06 01 21:59:25.103 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+2019 06 01 21:59:25.105 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+2019 06 01 21:59:25.106 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+2019 06 01 21:59:25.107 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+2019 06 01 21:59:25.108 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+2019 06 01 21:59:25.110 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+2019 06 01 21:59:25.111 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+2019 06 01 21:59:25.112 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+2019 06 01 21:59:25.113 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+2019 06 01 21:59:25.115 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+2019 06 01 21:59:25.116 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+2019 06 01 21:59:25.117 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+2019 06 01 21:59:25.119 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/cvx/functions/vec_/vec.m with tp3f47487f_7023_4a91_9510_6fcac1ea0b2c/vec.m in C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+2019 06 01 21:59:25.120 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m with tpa5ea4a20_1b9c_487d_ad6b_fda6723be921/enkf_samples.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+2019 06 01 21:59:25.122 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes with tpa5ea4a20_1b9c_487d_ad6b_fda6723be921 in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+2019 06 01 21:59:25.123 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m with tp0ed9e577_dc29_470f_80a2_ddbd431a6a19/trainingUsingFilters_HPRC.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+2019 06 01 21:59:25.126 UTC | 6 | null.null: MATLAB: Created dependency map:
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp2c4c39e4_6649_40c5_baca_5a30da815d4f/trained_NN_complete_data.mat
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/backprop.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/biasup.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/CderW.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/EnKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/forwardprop.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/getSigmaPts.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/measModel.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/multipleEpochEKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/multipleEpochEKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/multipleEpochEnKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/multipleEpochEnKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/multipleEpochOTF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/multipleEpochUKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/multipleEpochUKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/nn2param.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/NNconstruct.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/nnJacobian.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/OTF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/param2nn.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/sigmoid.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/sigmoidot.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/weightbiasup.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp99ffb6ac_a12f_4b90_bb73_751113a7ec6e/weightup.m
+  C:/_WORK_SPACE/cvx/functions/vec_/vec.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp3f47487f_7023_4a91_9510_6fcac1ea0b2c/vec.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tpa5ea4a20_1b9c_487d_ad6b_fda6723be921/enkf_samples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tpa5ea4a20_1b9c_487d_ad6b_fda6723be921/eq_wsamples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m -> /tmp/tp626560ff_a4e2_46fd_8553_75a87e2094f9rp15070/a/tp0ed9e577_dc29_470f_80a2_ddbd431a6a19/trainingUsingFilters_HPRC.m
+
+2019 06 01 21:59:25.259 UTC | 4 | MATLAB: Calling clear('functions'), and closing simulink models
+2019 06 01 21:59:25.405 UTC | 4 | MATLAB: About to call jobStartup
+2019 06 01 21:59:25.420 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 01 21:59:25.432 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 01 21:59:25.437 UTC | 4 | MATLAB: About to call taskStartup
+2019 06 01 21:59:25.465 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 01 21:59:25.468 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 01 21:59:25.470 UTC | 4 | MATLAB: About to get evaluation data
+2019 06 01 21:59:25.695 UTC | 4 | MATLAB: About to pInstantiatePool
+2019 06 01 21:59:26.105 UTC | 4 | MATLAB: Creating session with strategy: ALL_WORKERS_CONNECT_TO_CLIENT
+2019 06 01 21:59:26.148 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.ConnectionManager.buildLabConnManager: buildLabConnManager connectInfo is ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}
+2019 06 01 21:59:26.162 UTC | 3 | PeerConnector constructed.
+2019 06 01 21:59:26.162 UTC | 3 | ConnectionManager (MatlabPoolPeerInstance{fUuid=0e5c9e84-ede4-4e19-b937-7f3067facadf, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=1, fNumberOfLabs=19}) constructed.
+2019 06 01 21:59:26.164 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread WorkerSessionBuilder.initiate-lab0
+2019 06 01 21:59:26.175 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.ConnectionManager$Connector.activelyConnectTo: activelyConnectTo([Process: client])
+2019 06 01 21:59:26.177 UTC | 3 | activelyConnectTo(ServerSocketConnectInfo at nxt1304/10.70.13.4:38643 for group 05d8a3ea-1a6f-448b-ae06-4f807fab00a8) will try up to 5 or for up to 60000ms.
+2019 06 01 21:59:26.177 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.activelyConnectTo: activelyConnectTo(ServerSocketConnectInfo at nxt1304/10.70.13.4:38643 for group 05d8a3ea-1a6f-448b-ae06-4f807fab00a8) attempt 1
+2019 06 01 21:59:26.178 UTC | 5 | MATLAB: >> parallel.internal.getJavaFutureInterruptibly: timeout Inf seconds
+2019 06 01 21:59:26.181 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.configureSocketChannel: java.nio.channels.SocketChannel[unconnected]fornxt1304/10.70.13.4:38643 about to be configured.
+2019 06 01 21:59:26.182 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.configureSocketChannel: java.nio.channels.SocketChannel[unconnected]fornxt1304/10.70.13.4:38643 configured.
+2019 06 01 21:59:26.182 UTC | 4 | Trying to connect() : nxt1304/10.70.13.4:38643
+2019 06 01 21:59:26.186 UTC | 4 | Did connect() : nxt1304/10.70.13.4:38643 : java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643]
+2019 06 01 21:59:26.187 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.connectAndConfigureConnection: activelyConnectTo(ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}) connectionFactory is  com.mathworks.toolbox.distcomp.pmode.shared.PlainConnectionFactory@2c64757f
+2019 06 01 21:59:26.195 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.shared.JoinInfo$DeadlineHelper.getReasonableHandShakeDeadline: getReasonableHandShakeDeadline(ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}) time limit will be the lesser of 12000 and 9223370477428409612
+2019 06 01 21:59:26.196 UTC | 5 | Connect handshake to java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643] within 11999 milliseconds
+2019 06 01 21:59:26.196 UTC | 5 | About to send peer info (52 bytes) to java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643]
+2019 06 01 21:59:26.197 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.MatlabPoolPeerInstance.encodeInstanceBootstrap: Encoded MatlabPoolPeerInstance{fUuid=0e5c9e84-ede4-4e19-b937-7f3067facadf, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=1, fNumberOfLabs=19}
+2019 06 01 21:59:26.198 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread HandShakeSCHEDULED_EXECUTOR_SERVICE0
+2019 06 01 21:59:26.198 UTC | 5 | Sent local peer info :MatlabPoolPeerInstance{fUuid=0e5c9e84-ede4-4e19-b937-7f3067facadf, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=1, fNumberOfLabs=19} to java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643]
+2019 06 01 21:59:26.198 UTC | 5 | About to receive protocol id and bootstrap length (8 bytes) from java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643]
+2019 06 01 21:59:26.201 UTC | 5 | received 8 bytes of bootstrap information from java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643]
+2019 06 01 21:59:26.201 UTC | 5 | About to receive peer info bootstrap (44 bytes) from java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643]
+2019 06 01 21:59:26.201 UTC | 5 | received 44 of bootstrap information from java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643]
+2019 06 01 21:59:26.201 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.MatlabPoolPeerInstance.decodeRemoteInstanceBootstrap: Decoded MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:26.202 UTC | 5 | About to send acknowledge (4 bytes).
+2019 06 01 21:59:26.202 UTC | 5 | Sent acknowledge (4 bytes).
+2019 06 01 21:59:26.202 UTC | 5 | About to receive acknowledge (4 bytes).
+2019 06 01 21:59:26.202 UTC | 5 | Received acknowledge (4 bytes).
+2019 06 01 21:59:26.202 UTC | 3 | activelyConnectTo(ServerSocketConnectInfo at nxt1304/10.70.13.4:38643 for group 05d8a3ea-1a6f-448b-ae06-4f807fab00a8) got PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:26.203 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.ConnectionManager$Connector.activelyConnectTo: activelyConnectTo will return PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:26.230 UTC | 2 | pmode.Session building communication group with the following joinInfo: ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}
+2019 06 01 21:59:26.230 UTC | 2 | pmode.Session about to build communication group type: DirectCommunicationGroup
+2019 06 01 21:59:26.240 UTC | 5 | In DirectCommunicationGroup constructor.
+2019 06 01 21:59:26.240 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.<init>: About to call Selector.open()
+2019 06 01 21:59:26.240 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.<init>: Called Selector.open()
+2019 06 01 21:59:26.240 UTC | 5 | Exiting DirectCommunicationGroup constructor.
+2019 06 01 21:59:26.241 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:26.243 UTC | 5 | In TransmissionChannel constructor for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:26.246 UTC | 5 | Exiting TransmissionChannel constructor for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:26.246 UTC | 2 | RoleCommunicationGroup.registerConnection Mapping from [Process: client] to MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:26.247 UTC | 2 | RoleCommunicationGroup.registerConnection Mapping from [Process: client] to MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:26.248 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addConnection( PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}} ) on select thread
+2019 06 01 21:59:26.248 UTC | 3 | Initializing session.
+2019 06 01 21:59:26.248 UTC | 5 | Registering TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} with selector.
+2019 06 01 21:59:26.248 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:26.253 UTC | 3 | Starting the startup checker thread.
+2019 06 01 21:59:26.253 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread LabShutdownHandlerImpl0
+2019 06 01 21:59:26.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.DispatcherImpl$BridgingDispatcher to list of DispatchInvokers
+2019 06 01 21:59:26.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.transfer.TransferCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.DispatcherImpl$BridgingDispatcher
+2019 06 01 21:59:26.275 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ReturnMessageDispatcherImpl to list of DispatchInvokers
+2019 06 01 21:59:26.275 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.shared.ReturnMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.ReturnMessageDispatcherImpl
+2019 06 01 21:59:26.275 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl to list of DispatchInvokers
+2019 06 01 21:59:26.275 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.DispatchableMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl
+2019 06 01 21:59:26.276 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.LabShutdownHandlerImpl to list of DispatchInvokers
+2019 06 01 21:59:26.276 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.shared.Shutdown to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.LabShutdownHandlerImpl
+2019 06 01 21:59:26.277 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.SpmdExecutorImpl to list of DispatchInvokers
+2019 06 01 21:59:26.277 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.SpmdExecutorCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.SpmdExecutorImpl
+2019 06 01 21:59:26.278 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.taskqueue.TaskDispatcherImpl to list of DispatchInvokers
+2019 06 01 21:59:26.278 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.taskqueue.TaskQueueRequestMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.taskqueue.TaskDispatcherImpl
+2019 06 01 21:59:26.279 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ClearNotificationDispatcher to list of DispatchInvokers
+2019 06 01 21:59:26.279 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ClearNotificationCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.ClearNotificationDispatcher
+2019 06 01 21:59:26.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.LabMExecutorImpl to list of DispatchInvokers
+2019 06 01 21:59:26.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.MExecutorCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.LabMExecutorImpl
+2019 06 01 21:59:26.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.peermessaging.KeepAlive$KeepAliveDispatcher to list of DispatchInvokers
+2019 06 01 21:59:26.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.peermessaging.KeepAlive$KeepAliveMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.peermessaging.KeepAlive$KeepAliveDispatcher
+2019 06 01 21:59:26.281 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.Session$12 to list of DispatchInvokers
+2019 06 01 21:59:26.281 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$12
+2019 06 01 21:59:26.284 UTC | 5 | Attaching dispatcher: com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup$ForwardingDispatcher@530192b7 to 1 channels
+2019 06 01 21:59:26.287 UTC | 4 | ResponseTracker.setExpectedResponders([MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, MatlabPoolPeerInstance{fUuid=0e5c9e84-ede4-4e19-b937-7f3067facadf, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=1, fNumberOfLabs=19}])
+2019 06 01 21:59:26.287 UTC | 4 | ResponseTracker not ready to fire. Waiting for: [MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, MatlabPoolPeerInstance{fUuid=0e5c9e84-ede4-4e19-b937-7f3067facadf, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=1, fNumberOfLabs=19}]
+2019 06 01 21:59:26.288 UTC | 3 | Initialization complete.
+2019 06 01 21:59:26.291 UTC | 5 | MATLAB: << parallel.internal.getJavaFutureInterruptibly done: 1 shouldInterruptFcn 0 timeoutExpired 0
+2019 06 01 21:59:26.409 UTC | 4 | MATLAB: Pool instantiation complete
+2019 06 01 21:59:26.428 UTC | 4 | MATLAB: About to call poolStartup
+2019 06 01 21:59:26.434 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 01 21:59:26.437 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 01 21:59:26.439 UTC | 1 | MATLAB: Begin task function
+2019 06 01 21:59:26.442 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 01 21:59:26.448 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 01 21:59:26.461 UTC | 1 | MATLAB: End task function
+2019 06 01 21:59:26.472 UTC | 5 | MATLAB: dctStoreFunctionArray('set') called with 5 functions.
+2019 06 01 21:59:26.487 UTC | 5 | Enqueuing a message: com.mathworks.toolbox.distcomp.pmode.LabStartupSucceeded@9a07ce to: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:26.492 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 2, bytes: 252 to: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:26.492 UTC | 5 | Permit acquisition: heap: 0direct: 0
+2019 06 01 21:59:26.492 UTC | 4 | OUTGOING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 01 21:59:26.492 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 01 21:59:26.493 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 01 21:59:26.493 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:26.493 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 1317520022 writable
+2019 06 01 21:59:26.494 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 252 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:26.494 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 01 21:59:26.494 UTC | 4 | ResponseTracker.addResponder(MatlabPoolPeerInstance{fUuid=0e5c9e84-ede4-4e19-b937-7f3067facadf, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=1, fNumberOfLabs=19})
+2019 06 01 21:59:26.494 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 2 ms
+2019 06 01 21:59:26.494 UTC | 4 | ResponseTracker not ready to fire. Waiting for: [MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}]
+2019 06 01 21:59:26.495 UTC | 4 | OUTGOING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 01 21:59:26.495 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 2
+2019 06 01 21:59:26.495 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:26.495 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 1317520022 writable
+2019 06 01 21:59:26.495 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:26.495 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:26.526 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 01 21:59:26.527 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 1, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 01 21:59:26.527 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 01 21:59:26.527 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 15
+2019 06 01 21:59:26.529 UTC | 5 | Configured for PmodeSerializable expecting 178
+2019 06 01 21:59:26.529 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:26.529 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 1, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 178
+2019 06 01 21:59:26.530 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 1, bytes: 258
+2019 06 01 21:59:26.530 UTC | 5 | Non-blocking permit acquisition: heap: 0direct: 0
+2019 06 01 21:59:26.530 UTC | 4 | INCOMING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 01 21:59:26.531 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread SessionfDispatcherExec-0
+2019 06 01 21:59:26.531 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 01 21:59:26.531 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 3, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 01 21:59:26.531 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 01 21:59:26.531 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:26.532 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded@4183b9f4 from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:26.533 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded
+2019 06 01 21:59:26.533 UTC | 4 | Session got startup succeeded:com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded@4183b9f4
+2019 06 01 21:59:26.534 UTC | 4 | ResponseTracker.addResponder(MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1})
+2019 06 01 21:59:26.534 UTC | 2 | ResponseTracker got all responses, about to fire.
+2019 06 01 21:59:26.534 UTC | 5 | fOnSessionStartupComplete() starting.
+2019 06 01 21:59:26.534 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread KeepAlive fExecutor-0
+2019 06 01 21:59:26.534 UTC | 5 | KeepAlive fSender scheduled to send every 10 MINUTES
+2019 06 01 21:59:26.534 UTC | 3 | Cancelled shutdown.
+2019 06 01 21:59:26.534 UTC | 3 | Startup was successful.
+2019 06 01 21:59:26.534 UTC | 5 | fOnSessionStartupComplete() done.
+2019 06 01 21:59:26.535 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 01 21:59:26.535 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 5 ms
+2019 06 01 21:59:26.535 UTC | 4 | INCOMING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 01 21:59:27.131 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 01 21:59:27.131 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 3, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 01 21:59:27.131 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 01 21:59:27.131 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 15
+2019 06 01 21:59:27.132 UTC | 5 | Configured for PmodeSerializable expecting 3840
+2019 06 01 21:59:27.132 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:27.132 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 3, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 3840
+2019 06 01 21:59:27.132 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 3, bytes: 3920
+2019 06 01 21:59:27.132 UTC | 5 | Non-blocking permit acquisition: heap: 3direct: 0
+2019 06 01 21:59:27.132 UTC | 4 | INCOMING permit consume (3, 0) - fHeapKbConsumed: 3 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 01 21:59:27.132 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 01 21:59:27.133 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 01 21:59:27.133 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 01 21:59:27.133 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.138 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand[fSourceProcess = HAS_NOT_BEEN_SENT, fSequenceNumber = 1] from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:27.138 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand
+2019 06 01 21:59:27.139 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatchToList: Added  com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl
+2019 06 01 21:59:27.145 UTC | 5 | Enqueuing a message: com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand$PathNotificationCommandResult@c3b7044 to: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:27.147 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 5, bytes: 516 to: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:27.147 UTC | 5 | Permit acquisition: heap: 0direct: 0
+2019 06 01 21:59:27.148 UTC | 4 | OUTGOING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 01 21:59:27.148 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 01 21:59:27.148 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 01 21:59:27.148 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.148 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 1317520022 writable
+2019 06 01 21:59:27.148 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 516 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:27.149 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 01 21:59:27.149 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 1 ms
+2019 06 01 21:59:27.149 UTC | 4 | OUTGOING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 01 21:59:27.149 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 5
+2019 06 01 21:59:27.149 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.149 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 1317520022 writable
+2019 06 01 21:59:27.149 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.4:58512 remote=nxt1304/10.70.13.4:38643], fRemoteInstance=MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1304/10.70.13.4:38643, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 01 21:59:27.150 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.164 UTC | 5 | MATLAB: > WorkerPathHelper.cd
+2019 06 01 21:59:27.164 UTC | 5 | Permit release:  heap: 3 direct: 0
+2019 06 01 21:59:27.165 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 3 Kb dealt with in 33 ms
+2019 06 01 21:59:27.165 UTC | 4 | INCOMING permit release (3, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 01 21:59:27.165 UTC | 5 | MATLAB: > WorkerPathHelper iUnpackArgs
+2019 06 01 21:59:27.193 UTC | 6 | null.null: MATLAB: - WorkerPathHelper iUnpackArgs pathInfo PathInfo.RawPaths {/scratch/user/vedang.deshpande/MatlabJobs/WORKDIR}
+PathInfo.MATLABDrivePathMap.PathMap
+ keys {}
+ values {}
+2019 06 01 21:59:27.195 UTC | 6 | null.null: MATLAB: - WorkerPathHelper iUnpackArgs stringArgs 
+2019 06 01 21:59:27.196 UTC | 5 | MATLAB: < WorkerPathHelper iUnpackArgs
+2019 06 01 21:59:27.198 UTC | 5 | MATLAB: > WorkerPathHelper iGetPathToCd
+2019 06 01 21:59:27.205 UTC | 5 | MATLAB: < WorkerPathHelper iGetPathToCd /scratch/user/vedang.deshpande/MatlabJobs/WORKDIR
+2019 06 01 21:59:27.206 UTC | 6 | null.null: MATLAB: - WorkerPathHelper.cd calling cd /scratch/user/vedang.deshpande/MatlabJobs/WORKDIR
+2019 06 01 21:59:27.207 UTC | 5 | MATLAB: < WorkerPathHelper.cd
+2019 06 01 21:59:27.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 01 21:59:27.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 01 21:59:27.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 01 21:59:27.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 17
+2019 06 01 21:59:27.453 UTC | 5 | Configured for BufferTransferable, buffer 0 expecting 1508
+2019 06 01 21:59:27.459 UTC | 5 | Configured for BufferTransferable, buffer 1 expecting 1777576
+2019 06 01 21:59:27.459 UTC | 5 | Configured for BufferTransferable, buffer 2 expecting 424
+2019 06 01 21:59:27.459 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:27.459 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 130856
+2019 06 01 21:59:27.459 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@3d77f01d
+2019 06 01 21:59:27.459 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 01 21:59:27.460 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.460 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:27.460 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 130936
+2019 06 01 21:59:27.460 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@3d77f01d
+2019 06 01 21:59:27.460 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 01 21:59:27.460 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:27.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 392808
+2019 06 01 21:59:27.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@3d77f01d
+2019 06 01 21:59:27.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 01 21:59:27.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.462 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:27.462 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 392808
+2019 06 01 21:59:27.462 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@3d77f01d
+2019 06 01 21:59:27.462 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 01 21:59:27.462 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.462 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:27.463 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 392808
+2019 06 01 21:59:27.463 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@3d77f01d
+2019 06 01 21:59:27.463 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 01 21:59:27.463 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.508 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 01 21:59:27.509 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 339292
+2019 06 01 21:59:27.509 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 4, bytes: 1779588
+2019 06 01 21:59:27.509 UTC | 5 | Non-blocking permit acquisition: heap: 1direct: 1735
+2019 06 01 21:59:27.509 UTC | 4 | INCOMING permit consume (1, 1735) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 1735 of 512000, fNumMessagesQueued: 1
+2019 06 01 21:59:27.509 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 01 21:59:27.509 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 6, from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 01 21:59:27.509 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 01 21:59:27.510 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 01 21:59:27.517 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand[fSourceProcess = HAS_NOT_BEEN_SENT, fSequenceNumber = 18] from: MatlabPoolPeerInstance{fUuid=fcf259d2-c914-4201-97b8-a65f8aeb93ad, fGroupUuid=05d8a3ea-1a6f-448b-ae06-4f807fab00a8, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 01 21:59:27.517 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand
+2019 06 01 21:59:27.517 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatchToList: Added  com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl
+2019 06 01 21:59:27.520 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread FutureWaiter fThreadPool-0
+2019 06 01 21:59:27.523 UTC | 6 | com.mathworks.toolbox.distcomp.util.FutureWaiter.waitAndTrigger: FutureWaiter.waitAndTrigger(com.mathworks.mvm.exec.FutureFevalResult@305abc5f, com.mathworks.toolbox.distcomp.pmode.MFevalCommand$1@150519c6)
+2019 06 01 21:59:27.523 UTC | 4 | FutureWaiter about to invoke get() on com.mathworks.mvm.exec.FutureFevalResult@305abc5f
+2019 06 01 21:59:27.524 UTC | 5 | Permit release:  heap: 1 direct: 1735
+2019 06 01 21:59:27.525 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 1736 Kb dealt with in 16 ms
+2019 06 01 21:59:27.525 UTC | 4 | INCOMING permit release (1, 1735) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:16.139 UTC | 4 | MATLAB: Setting number of computational threads to 2.
+2019 06 02 04:32:16.163 UTC | 4 | MATLAB: MATLAB Drive Enabled 0
+2019 06 02 04:32:16.165 UTC | 2 | MATLAB: Completed pre-execution phase
+2019 06 02 04:32:16.257 UTC | 4 | MATLAB: About to pPreJobEvaluate
+2019 06 02 04:32:17.031 UTC | 4 | MATLAB: About to pPreTaskEvaluate
+2019 06 02 04:32:17.129 UTC | 4 | MATLAB: About to add job dependencies
+2019 06 02 04:32:17.161 UTC | 5 | MATLAB: > JobPathHelper.addAdditionalPaths
+2019 06 02 04:32:17.162 UTC | 5 | MATLAB: > JobPathHelper.getPathsToAdd
+2019 06 02 04:32:17.172 UTC | 5 | MATLAB: < JobPathHelper.getPathsToAdd ~isMATLABDriveEnabledOnWorker
+2019 06 02 04:32:17.191 UTC | 4 | MATLAB: Not adding path dependencies as there is no change required to the path.
+2019 06 02 04:32:17.192 UTC | 5 | MATLAB: < JobPathHelper.addAdditionalPaths
+2019 06 02 04:32:17.468 UTC | 6 | null.null: MATLAB: About to add dependencies to path:
+C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+
+2019 06 02 04:32:17.491 UTC | 6 | null.null: MATLAB: Adding dependency paths:
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tp06ab4640_a99d_4f82_85fe_9f95a7132b8c
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tp06ab4640_a99d_4f82_85fe_9f95a7132b8c/vec.m
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpafdb277f_7139_4499_907e_e52c53edf1bb
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpafdb277f_7139_4499_907e_e52c53edf1bb/enkf_samples.m
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tp7a537f1e_8c51_4e8a_8c87_4d8b08f7e985
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tp7a537f1e_8c51_4e8a_8c87_4d8b08f7e985/trained_NN_complete_data.mat
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpd654451a_76b3_4721_ae76_f9ff77820c72
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpd654451a_76b3_4721_ae76_f9ff77820c72/trainingUsingFilters_HPRC.m
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842
+/tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/CderW.m
+
+2019 06 02 04:32:17.495 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat with tp7a537f1e_8c51_4e8a_8c87_4d8b08f7e985/trained_NN_complete_data.mat in C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat
+2019 06 02 04:32:17.498 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m
+2019 06 02 04:32:17.500 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m
+2019 06 02 04:32:17.503 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m with tpda2632f0_d265_4780_914b_3e9702db8842/CderW.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m
+2019 06 02 04:32:17.509 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m
+2019 06 02 04:32:17.512 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m
+2019 06 02 04:32:17.513 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m
+2019 06 02 04:32:17.514 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m
+2019 06 02 04:32:17.515 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m
+2019 06 02 04:32:17.517 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m
+2019 06 02 04:32:17.519 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m
+2019 06 02 04:32:17.520 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m
+2019 06 02 04:32:17.521 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m
+2019 06 02 04:32:17.522 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m
+2019 06 02 04:32:17.523 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m
+2019 06 02 04:32:17.525 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m
+2019 06 02 04:32:17.526 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m
+2019 06 02 04:32:17.527 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m
+2019 06 02 04:32:17.528 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m
+2019 06 02 04:32:17.530 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m
+2019 06 02 04:32:17.531 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m
+2019 06 02 04:32:17.532 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m
+2019 06 02 04:32:17.533 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m
+2019 06 02 04:32:17.534 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m
+2019 06 02 04:32:17.535 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/utils with tpda2632f0_d265_4780_914b_3e9702db8842 in C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m
+2019 06 02 04:32:17.537 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/cvx/functions/vec_/vec.m with tp06ab4640_a99d_4f82_85fe_9f95a7132b8c/vec.m in C:/_WORK_SPACE/cvx/functions/vec_/vec.m
+2019 06 02 04:32:17.538 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m with tpafdb277f_7139_4499_907e_e52c53edf1bb/enkf_samples.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m
+2019 06 02 04:32:17.540 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes with tpafdb277f_7139_4499_907e_e52c53edf1bb in C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m
+2019 06 02 04:32:17.541 UTC | 6 | null.null: MATLAB: Replacing C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m with tpd654451a_76b3_4721_ae76_f9ff77820c72/trainingUsingFilters_HPRC.m in C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m
+2019 06 02 04:32:17.544 UTC | 6 | null.null: MATLAB: Created dependency map:
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/data/trained_NN_complete_data.mat -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tp7a537f1e_8c51_4e8a_8c87_4d8b08f7e985/trained_NN_complete_data.mat
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/backprop.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/backprop.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/biasup.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/biasup.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/CderW.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/CderW.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/EnKF.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/EnKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/eq_wsamples.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/eq_wsamples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/forwardprop.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/forwardprop.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/getSigmaPts.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/getSigmaPts.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/measModel.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/measModel.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKF.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/multipleEpochEKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEKFv1.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/multipleEpochEKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKF.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/multipleEpochEnKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochEnKFv1.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/multipleEpochEnKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochOTF.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/multipleEpochOTF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKF.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/multipleEpochUKF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/multipleEpochUKFv1.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/multipleEpochUKFv1.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nn2param.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/nn2param.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/NNconstruct.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/NNconstruct.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/nnJacobian.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/nnJacobian.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/OTF.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/OTF.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/param2nn.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/param2nn.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoid.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/sigmoid.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/sigmoidot.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/sigmoidot.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightbiasup.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/weightbiasup.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/utils/weightup.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpda2632f0_d265_4780_914b_3e9702db8842/weightup.m
+  C:/_WORK_SPACE/cvx/functions/vec_/vec.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tp06ab4640_a99d_4f82_85fe_9f95a7132b8c/vec.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/enkf_samples.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpafdb277f_7139_4499_907e_e52c53edf1bb/enkf_samples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/OT_codes/others/fig1codes/eq_wsamples.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpafdb277f_7139_4499_907e_e52c53edf1bb/eq_wsamples.m
+  C:/_WORK_SPACE/test_py/UKF/MATLAB/test/trainingUsingFilters_HPRC.m -> /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878/a/tpd654451a_76b3_4721_ae76_f9ff77820c72/trainingUsingFilters_HPRC.m
+
+2019 06 02 04:32:17.672 UTC | 4 | MATLAB: Calling clear('functions'), and closing simulink models
+2019 06 02 04:32:17.809 UTC | 4 | MATLAB: About to call jobStartup
+2019 06 02 04:32:17.822 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 02 04:32:17.832 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 02 04:32:17.836 UTC | 4 | MATLAB: About to call taskStartup
+2019 06 02 04:32:17.861 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 02 04:32:17.864 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 02 04:32:17.865 UTC | 4 | MATLAB: About to get evaluation data
+2019 06 02 04:32:18.071 UTC | 4 | MATLAB: About to pInstantiatePool
+2019 06 02 04:32:18.386 UTC | 4 | MATLAB: Creating session with strategy: ALL_WORKERS_CONNECT_TO_CLIENT
+2019 06 02 04:32:18.426 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.ConnectionManager.buildLabConnManager: buildLabConnManager connectInfo is ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}
+2019 06 02 04:32:18.433 UTC | 3 | PeerConnector constructed.
+2019 06 02 04:32:18.433 UTC | 3 | ConnectionManager (MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3}) constructed.
+2019 06 02 04:32:18.435 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread WorkerSessionBuilder.initiate-lab0
+2019 06 02 04:32:18.445 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.ConnectionManager$Connector.activelyConnectTo: activelyConnectTo([Process: client])
+2019 06 02 04:32:18.447 UTC | 5 | MATLAB: >> parallel.internal.getJavaFutureInterruptibly: timeout Inf seconds
+2019 06 02 04:32:18.448 UTC | 3 | activelyConnectTo(ServerSocketConnectInfo at nxt1357/10.70.13.57:38902 for group 8de07a8a-63ef-41c3-b22d-bbed7648d760) will try up to 5 or for up to 60000ms.
+2019 06 02 04:32:18.448 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.activelyConnectTo: activelyConnectTo(ServerSocketConnectInfo at nxt1357/10.70.13.57:38902 for group 8de07a8a-63ef-41c3-b22d-bbed7648d760) attempt 1
+2019 06 02 04:32:18.451 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.configureSocketChannel: java.nio.channels.SocketChannel[unconnected]fornxt1357/10.70.13.57:38902 about to be configured.
+2019 06 02 04:32:18.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.configureSocketChannel: java.nio.channels.SocketChannel[unconnected]fornxt1357/10.70.13.57:38902 configured.
+2019 06 02 04:32:18.453 UTC | 4 | Trying to connect() : nxt1357/10.70.13.57:38902
+2019 06 02 04:32:18.456 UTC | 4 | Did connect() : nxt1357/10.70.13.57:38902 : java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902]
+2019 06 02 04:32:18.458 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.peermessaging.PeerConnector.connectAndConfigureConnection: activelyConnectTo(ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}) connectionFactory is  com.mathworks.toolbox.distcomp.pmode.shared.PlainConnectionFactory@77c234c8
+2019 06 02 04:32:18.466 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.shared.JoinInfo$DeadlineHelper.getReasonableHandShakeDeadline: getReasonableHandShakeDeadline(ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}) time limit will be the lesser of 12000 and 9223370477404837341
+2019 06 02 04:32:18.466 UTC | 5 | Connect handshake to java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902] within 12000 milliseconds
+2019 06 02 04:32:18.466 UTC | 5 | About to send peer info (52 bytes) to java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902]
+2019 06 02 04:32:18.467 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.MatlabPoolPeerInstance.encodeInstanceBootstrap: Encoded MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3}
+2019 06 02 04:32:18.468 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread HandShakeSCHEDULED_EXECUTOR_SERVICE0
+2019 06 02 04:32:18.469 UTC | 5 | Sent local peer info :MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3} to java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902]
+2019 06 02 04:32:18.469 UTC | 5 | About to receive protocol id and bootstrap length (8 bytes) from java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902]
+2019 06 02 04:32:18.471 UTC | 5 | received 8 bytes of bootstrap information from java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902]
+2019 06 02 04:32:18.471 UTC | 5 | About to receive peer info bootstrap (44 bytes) from java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902]
+2019 06 02 04:32:18.471 UTC | 5 | received 44 of bootstrap information from java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902]
+2019 06 02 04:32:18.472 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.MatlabPoolPeerInstance.decodeRemoteInstanceBootstrap: Decoded MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:18.472 UTC | 5 | About to send acknowledge (4 bytes).
+2019 06 02 04:32:18.472 UTC | 5 | Sent acknowledge (4 bytes).
+2019 06 02 04:32:18.472 UTC | 5 | About to receive acknowledge (4 bytes).
+2019 06 02 04:32:18.472 UTC | 5 | Received acknowledge (4 bytes).
+2019 06 02 04:32:18.473 UTC | 3 | activelyConnectTo(ServerSocketConnectInfo at nxt1357/10.70.13.57:38902 for group 8de07a8a-63ef-41c3-b22d-bbed7648d760) got PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:18.473 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.poolmessaging.ConnectionManager$Connector.activelyConnectTo: activelyConnectTo will return PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:18.501 UTC | 2 | pmode.Session building communication group with the following joinInfo: ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}
+2019 06 02 04:32:18.501 UTC | 2 | pmode.Session about to build communication group type: DirectCommunicationGroup
+2019 06 02 04:32:18.507 UTC | 5 | In DirectCommunicationGroup constructor.
+2019 06 02 04:32:18.507 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.<init>: About to call Selector.open()
+2019 06 02 04:32:18.507 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.<init>: Called Selector.open()
+2019 06 02 04:32:18.507 UTC | 5 | Exiting DirectCommunicationGroup constructor.
+2019 06 02 04:32:18.507 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:18.510 UTC | 5 | In TransmissionChannel constructor for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:18.513 UTC | 5 | Exiting TransmissionChannel constructor for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:18.513 UTC | 2 | RoleCommunicationGroup.registerConnection Mapping from [Process: client] to MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:18.513 UTC | 2 | RoleCommunicationGroup.registerConnection Mapping from [Process: client] to MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:18.514 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addConnection( PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}} ) on select thread
+2019 06 02 04:32:18.514 UTC | 5 | Registering TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} with selector.
+2019 06 02 04:32:18.514 UTC | 3 | Initializing session.
+2019 06 02 04:32:18.515 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:18.519 UTC | 3 | Starting the startup checker thread.
+2019 06 02 04:32:18.519 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread LabShutdownHandlerImpl0
+2019 06 02 04:32:18.539 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.DispatcherImpl$BridgingDispatcher to list of DispatchInvokers
+2019 06 02 04:32:18.539 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.transfer.TransferCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.DispatcherImpl$BridgingDispatcher
+2019 06 02 04:32:18.539 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ReturnMessageDispatcherImpl to list of DispatchInvokers
+2019 06 02 04:32:18.539 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.shared.ReturnMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.ReturnMessageDispatcherImpl
+2019 06 02 04:32:18.540 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl to list of DispatchInvokers
+2019 06 02 04:32:18.540 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.DispatchableMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl
+2019 06 02 04:32:18.541 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.LabShutdownHandlerImpl to list of DispatchInvokers
+2019 06 02 04:32:18.541 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.shared.Shutdown to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.LabShutdownHandlerImpl
+2019 06 02 04:32:18.542 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.SpmdExecutorImpl to list of DispatchInvokers
+2019 06 02 04:32:18.542 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.SpmdExecutorCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.SpmdExecutorImpl
+2019 06 02 04:32:18.543 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.taskqueue.TaskDispatcherImpl to list of DispatchInvokers
+2019 06 02 04:32:18.543 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.taskqueue.TaskQueueRequestMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.taskqueue.TaskDispatcherImpl
+2019 06 02 04:32:18.543 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ClearNotificationDispatcher to list of DispatchInvokers
+2019 06 02 04:32:18.544 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ClearNotificationCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.ClearNotificationDispatcher
+2019 06 02 04:32:18.545 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.LabMExecutorImpl to list of DispatchInvokers
+2019 06 02 04:32:18.545 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.MExecutorCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.LabMExecutorImpl
+2019 06 02 04:32:18.545 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.peermessaging.KeepAlive$KeepAliveDispatcher to list of DispatchInvokers
+2019 06 02 04:32:18.545 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.peermessaging.KeepAlive$KeepAliveMessage to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.peermessaging.KeepAlive$KeepAliveDispatcher
+2019 06 02 04:32:18.546 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.Session$12 to list of DispatchInvokers
+2019 06 02 04:32:18.546 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.addDispatcherImpl: Added  com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$12
+2019 06 02 04:32:18.549 UTC | 5 | Attaching dispatcher: com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup$ForwardingDispatcher@495541d7 to 1 channels
+2019 06 02 04:32:18.551 UTC | 4 | ResponseTracker.setExpectedResponders([MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3}])
+2019 06 02 04:32:18.551 UTC | 4 | ResponseTracker not ready to fire. Waiting for: [MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3}]
+2019 06 02 04:32:18.552 UTC | 3 | Initialization complete.
+2019 06 02 04:32:18.555 UTC | 5 | MATLAB: << parallel.internal.getJavaFutureInterruptibly done: 1 shouldInterruptFcn 0 timeoutExpired 0
+2019 06 02 04:32:18.590 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:18.590 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 1, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 02 04:32:18.591 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:18.591 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 6
+2019 06 02 04:32:18.593 UTC | 5 | Configured for PmodeSerializable expecting 178
+2019 06 02 04:32:18.593 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:18.593 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 1, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 178
+2019 06 02 04:32:18.593 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 1, bytes: 258
+2019 06 02 04:32:18.595 UTC | 5 | Non-blocking permit acquisition: heap: 0direct: 0
+2019 06 02 04:32:18.595 UTC | 4 | INCOMING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:18.596 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread SessionfDispatcherExec-0
+2019 06 02 04:32:18.596 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:18.596 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 2, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 02 04:32:18.596 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:18.597 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:18.599 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded@58a52b44 from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:18.600 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded
+2019 06 02 04:32:18.600 UTC | 4 | Session got startup succeeded:com.mathworks.toolbox.distcomp.pmode.ClientStartupSucceeded@58a52b44
+2019 06 02 04:32:18.600 UTC | 4 | ResponseTracker.addResponder(MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1})
+2019 06 02 04:32:18.600 UTC | 4 | ResponseTracker not ready to fire. Waiting for: [MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3}]
+2019 06 02 04:32:18.600 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 02 04:32:18.600 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 5 ms
+2019 06 02 04:32:18.601 UTC | 4 | INCOMING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:18.664 UTC | 4 | MATLAB: Pool instantiation complete
+2019 06 02 04:32:18.681 UTC | 4 | MATLAB: About to call poolStartup
+2019 06 02 04:32:18.685 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 02 04:32:18.688 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 02 04:32:18.690 UTC | 1 | MATLAB: Begin task function
+2019 06 02 04:32:18.692 UTC | 6 | null.null: MATLAB: About to push FileWriter on stack
+2019 06 02 04:32:18.697 UTC | 6 | null.null: MATLAB: FileWriter popped off stack
+2019 06 02 04:32:18.709 UTC | 1 | MATLAB: End task function
+2019 06 02 04:32:18.719 UTC | 5 | MATLAB: dctStoreFunctionArray('set') called with 5 functions.
+2019 06 02 04:32:18.729 UTC | 5 | Enqueuing a message: com.mathworks.toolbox.distcomp.pmode.LabStartupSucceeded@2757052e to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:18.731 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 3, bytes: 252 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:18.731 UTC | 5 | Permit acquisition: heap: 0direct: 0
+2019 06 02 04:32:18.731 UTC | 4 | OUTGOING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:18.731 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 02 04:32:18.732 UTC | 4 | ResponseTracker.addResponder(MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3})
+2019 06 02 04:32:18.732 UTC | 2 | ResponseTracker got all responses, about to fire.
+2019 06 02 04:32:18.732 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:32:18.732 UTC | 5 | fOnSessionStartupComplete() starting.
+2019 06 02 04:32:18.732 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:18.733 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread KeepAlive fExecutor-0
+2019 06 02 04:32:18.733 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:18.733 UTC | 5 | KeepAlive fSender scheduled to send every 10 MINUTES
+2019 06 02 04:32:18.733 UTC | 3 | Cancelled shutdown.
+2019 06 02 04:32:18.733 UTC | 3 | Startup was successful.
+2019 06 02 04:32:18.733 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 252 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:18.733 UTC | 5 | fOnSessionStartupComplete() done.
+2019 06 02 04:32:18.734 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 02 04:32:18.734 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 3 ms
+2019 06 02 04:32:18.735 UTC | 4 | OUTGOING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:18.735 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 3
+2019 06 02 04:32:18.735 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:18.735 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:18.735 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:18.736 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.171 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:19.171 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 2, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 02 04:32:19.172 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:19.172 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 4
+2019 06 02 04:32:19.172 UTC | 5 | Configured for PmodeSerializable expecting 3840
+2019 06 02 04:32:19.172 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:19.172 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 2, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 3840
+2019 06 02 04:32:19.172 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 2, bytes: 3920
+2019 06 02 04:32:19.172 UTC | 5 | Non-blocking permit acquisition: heap: 3direct: 0
+2019 06 02 04:32:19.173 UTC | 4 | INCOMING permit consume (3, 0) - fHeapKbConsumed: 3 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:19.173 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:19.173 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 02 04:32:19.173 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:19.173 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.178 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand[fSourceProcess = HAS_NOT_BEEN_SENT, fSequenceNumber = 1] from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:19.178 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand
+2019 06 02 04:32:19.179 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatchToList: Added  com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl
+2019 06 02 04:32:19.180 UTC | 5 | Enqueuing a message: com.mathworks.toolbox.distcomp.pmode.PathNotificationCommand$PathNotificationCommandResult@6b0c47e5 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:19.182 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 5, bytes: 516 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:19.182 UTC | 5 | Permit acquisition: heap: 0direct: 0
+2019 06 02 04:32:19.183 UTC | 4 | OUTGOING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:19.183 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 02 04:32:19.183 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:32:19.184 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.184 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:19.184 UTC | 5 | Permit release:  heap: 3 direct: 0
+2019 06 02 04:32:19.184 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 516 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:19.184 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 3 Kb dealt with in 11 ms
+2019 06 02 04:32:19.184 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 02 04:32:19.184 UTC | 4 | INCOMING permit release (3, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:19.184 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 1 ms
+2019 06 02 04:32:19.185 UTC | 4 | OUTGOING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:19.185 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 5
+2019 06 02 04:32:19.185 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.185 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:19.185 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:19.185 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.214 UTC | 5 | MATLAB: > WorkerPathHelper.cd
+2019 06 02 04:32:19.215 UTC | 5 | MATLAB: > WorkerPathHelper iUnpackArgs
+2019 06 02 04:32:19.241 UTC | 6 | null.null: MATLAB: - WorkerPathHelper iUnpackArgs pathInfo PathInfo.RawPaths {/scratch/user/vedang.deshpande/MatlabJobs/WORKDIR}
+PathInfo.MATLABDrivePathMap.PathMap
+ keys {}
+ values {}
+2019 06 02 04:32:19.244 UTC | 6 | null.null: MATLAB: - WorkerPathHelper iUnpackArgs stringArgs 
+2019 06 02 04:32:19.245 UTC | 5 | MATLAB: < WorkerPathHelper iUnpackArgs
+2019 06 02 04:32:19.246 UTC | 5 | MATLAB: > WorkerPathHelper iGetPathToCd
+2019 06 02 04:32:19.253 UTC | 5 | MATLAB: < WorkerPathHelper iGetPathToCd /scratch/user/vedang.deshpande/MatlabJobs/WORKDIR
+2019 06 02 04:32:19.254 UTC | 6 | null.null: MATLAB: - WorkerPathHelper.cd calling cd /scratch/user/vedang.deshpande/MatlabJobs/WORKDIR
+2019 06 02 04:32:19.255 UTC | 5 | MATLAB: < WorkerPathHelper.cd
+2019 06 02 04:32:19.441 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:19.442 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 02 04:32:19.442 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:19.442 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 3
+2019 06 02 04:32:19.442 UTC | 5 | Configured for BufferTransferable, buffer 0 expecting 1508
+2019 06 02 04:32:19.447 UTC | 5 | Configured for BufferTransferable, buffer 1 expecting 1776128
+2019 06 02 04:32:19.448 UTC | 5 | Configured for BufferTransferable, buffer 2 expecting 424
+2019 06 02 04:32:19.448 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:19.448 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 130856
+2019 06 02 04:32:19.448 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@620ab90f
+2019 06 02 04:32:19.448 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 02 04:32:19.448 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.449 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:19.449 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 130936
+2019 06 02 04:32:19.449 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@620ab90f
+2019 06 02 04:32:19.449 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 02 04:32:19.449 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.449 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:19.450 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 392808
+2019 06 02 04:32:19.450 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@620ab90f
+2019 06 02 04:32:19.451 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 02 04:32:19.451 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.451 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:19.451 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 392808
+2019 06 02 04:32:19.451 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@620ab90f
+2019 06 02 04:32:19.452 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 02 04:32:19.452 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.452 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:19.452 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 654680
+2019 06 02 04:32:19.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages$DefaultHeaderPayload.isPayloadCompletelyTransmitted: Remaining data for com.mathworks.toolbox.distcomp.util.ByteBufferHandle@620ab90f
+2019 06 02 04:32:19.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Have not read the payload
+2019 06 02 04:32:19.453 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.460 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:19.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 4, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 75972
+2019 06 02 04:32:19.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 4, bytes: 1778140
+2019 06 02 04:32:19.461 UTC | 5 | Non-blocking permit acquisition: heap: 1direct: 1734
+2019 06 02 04:32:19.461 UTC | 4 | INCOMING permit consume (1, 1734) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 1734 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:19.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:19.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 6, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 02 04:32:19.461 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:19.462 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:19.469 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand[fSourceProcess = HAS_NOT_BEEN_SENT, fSequenceNumber = 3] from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:19.469 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand
+2019 06 02 04:32:19.469 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatchToList: Added  com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.Session$DispatchableMessageDispatcherImpl
+2019 06 02 04:32:19.472 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread FutureWaiter fThreadPool-0
+2019 06 02 04:32:19.472 UTC | 6 | com.mathworks.toolbox.distcomp.util.FutureWaiter.waitAndTrigger: FutureWaiter.waitAndTrigger(com.mathworks.mvm.exec.FutureFevalResult@44de86b6, com.mathworks.toolbox.distcomp.pmode.MFevalCommand$1@6d5e3a0c)
+2019 06 02 04:32:19.472 UTC | 4 | FutureWaiter about to invoke get() on com.mathworks.mvm.exec.FutureFevalResult@44de86b6
+2019 06 02 04:32:19.472 UTC | 5 | Permit release:  heap: 1 direct: 1734
+2019 06 02 04:32:19.473 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 1735 Kb dealt with in 12 ms
+2019 06 02 04:32:19.473 UTC | 4 | INCOMING permit release (1, 1734) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:24.466 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:29.472 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:34.473 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:39.480 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:44.486 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.299 UTC | 4 | FutureWaiter completed get() loop.
+2019 06 02 04:32:45.300 UTC | 4 | FutureWaiter successfully completed a get() on com.mathworks.mvm.exec.FutureFevalResult@44de86b6
+2019 06 02 04:32:45.302 UTC | 5 | Enqueuing a message: Command window output for command 3 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:45.303 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 7, bytes: 496 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:45.304 UTC | 5 | Permit acquisition: heap: 0direct: 0
+2019 06 02 04:32:45.304 UTC | 4 | OUTGOING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:45.304 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 02 04:32:45.304 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:32:45.304 UTC | 5 | Enqueuing a message: Command execution results for command 3
+Exception: null to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:45.304 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.305 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:45.305 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 496 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:45.305 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 02 04:32:45.305 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 1 ms
+2019 06 02 04:32:45.305 UTC | 4 | OUTGOING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:45.306 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 7
+2019 06 02 04:32:45.306 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.306 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:45.306 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:45.306 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.307 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 8, bytes: 1344 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:45.307 UTC | 5 | Permit acquisition: heap: 1direct: 0
+2019 06 02 04:32:45.307 UTC | 4 | OUTGOING permit consume (1, 0) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:45.307 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 02 04:32:45.307 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:32:45.307 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.326 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:45.326 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 1344 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:45.326 UTC | 5 | Permit release:  heap: 1 direct: 0
+2019 06 02 04:32:45.326 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 1 Kb dealt with in 19 ms
+2019 06 02 04:32:45.326 UTC | 4 | OUTGOING permit release (1, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:45.326 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 8
+2019 06 02 04:32:45.327 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.327 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:32:45.327 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:32:45.327 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.335 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:45.335 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 6, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 02 04:32:45.336 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:45.336 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 2
+2019 06 02 04:32:45.336 UTC | 5 | Configured for BufferTransferable, buffer 0 expecting 1508
+2019 06 02 04:32:45.336 UTC | 5 | Configured for BufferTransferable, buffer 1 expecting 0
+2019 06 02 04:32:45.336 UTC | 5 | Configured for BufferTransferable, buffer 2 expecting 424
+2019 06 02 04:32:45.336 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:32:45.336 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 6, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 1932
+2019 06 02 04:32:45.336 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 6, bytes: 2012
+2019 06 02 04:32:45.337 UTC | 5 | Non-blocking permit acquisition: heap: 1direct: 0
+2019 06 02 04:32:45.337 UTC | 4 | INCOMING permit consume (1, 0) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:32:45.337 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:32:45.338 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 9, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 02 04:32:45.338 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:32:45.338 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:45.338 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand[fSourceProcess = HAS_NOT_BEEN_SENT, fSequenceNumber = 5] from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:32:45.338 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand
+2019 06 02 04:32:45.339 UTC | 6 | com.mathworks.toolbox.distcomp.util.FutureWaiter.waitAndTrigger: FutureWaiter.waitAndTrigger(com.mathworks.mvm.exec.FutureFevalResult@2b1188f3, com.mathworks.toolbox.distcomp.pmode.MFevalCommand$1@c361f9c)
+2019 06 02 04:32:45.339 UTC | 4 | FutureWaiter about to invoke get() on com.mathworks.mvm.exec.FutureFevalResult@2b1188f3
+2019 06 02 04:32:45.339 UTC | 5 | Permit release:  heap: 1 direct: 0
+2019 06 02 04:32:45.339 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 1 Kb dealt with in 2 ms
+2019 06 02 04:32:45.339 UTC | 4 | INCOMING permit release (1, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:32:50.343 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:32:55.349 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:00.355 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:05.361 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:09.959 UTC | 4 | FutureWaiter completed get() loop.
+2019 06 02 04:33:09.960 UTC | 4 | FutureWaiter successfully completed a get() on com.mathworks.mvm.exec.FutureFevalResult@2b1188f3
+2019 06 02 04:33:09.960 UTC | 5 | Enqueuing a message: Command window output for command 5 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:09.961 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 10, bytes: 496 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:09.961 UTC | 5 | Permit acquisition: heap: 0direct: 0
+2019 06 02 04:33:09.961 UTC | 4 | OUTGOING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:33:09.961 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 02 04:33:09.961 UTC | 5 | Enqueuing a message: Command execution results for command 5
+Exception: null to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:09.961 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:33:09.962 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 11, bytes: 1344 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:09.962 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:09.962 UTC | 5 | Permit acquisition: heap: 1direct: 0
+2019 06 02 04:33:09.962 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:33:09.962 UTC | 4 | OUTGOING permit consume (1, 0) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 2
+2019 06 02 04:33:09.963 UTC | 5 | Enqueued message, queue size now: 2
+2019 06 02 04:33:09.963 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 496 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:09.963 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 02 04:33:09.963 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 2 ms
+2019 06 02 04:33:09.963 UTC | 4 | OUTGOING permit release (0, 0) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:33:09.963 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 10
+2019 06 02 04:33:09.963 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 1344 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:09.963 UTC | 5 | Permit release:  heap: 1 direct: 0
+2019 06 02 04:33:09.964 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 1 Kb dealt with in 1 ms
+2019 06 02 04:33:09.964 UTC | 4 | OUTGOING permit release (1, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:33:09.964 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 11
+2019 06 02 04:33:09.964 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:33:09.965 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:09.965 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:33:09.965 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:09.965 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.008 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:33:10.008 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 9, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 02 04:33:10.008 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:33:10.008 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 2
+2019 06 02 04:33:10.008 UTC | 5 | Configured for BufferTransferable, buffer 0 expecting 1508
+2019 06 02 04:33:10.008 UTC | 5 | Configured for BufferTransferable, buffer 1 expecting 0
+2019 06 02 04:33:10.008 UTC | 5 | Configured for BufferTransferable, buffer 2 expecting 200
+2019 06 02 04:33:10.009 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:33:10.009 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 9, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 1708
+2019 06 02 04:33:10.009 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 9, bytes: 1788
+2019 06 02 04:33:10.009 UTC | 5 | Non-blocking permit acquisition: heap: 1direct: 0
+2019 06 02 04:33:10.009 UTC | 4 | INCOMING permit consume (1, 0) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:33:10.009 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:33:10.009 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 12, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 02 04:33:10.009 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:33:10.010 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.010 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand[fSourceProcess = HAS_NOT_BEEN_SENT, fSequenceNumber = 8] from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.010 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.MFevalLargeDataCommand
+2019 06 02 04:33:10.011 UTC | 6 | com.mathworks.toolbox.distcomp.util.FutureWaiter.waitAndTrigger: FutureWaiter.waitAndTrigger(com.mathworks.mvm.exec.FutureFevalResult@10b06ac3, com.mathworks.toolbox.distcomp.pmode.MFevalCommand$1@2e3130c4)
+2019 06 02 04:33:10.011 UTC | 4 | FutureWaiter about to invoke get() on com.mathworks.mvm.exec.FutureFevalResult@10b06ac3
+2019 06 02 04:33:10.011 UTC | 5 | Permit release:  heap: 1 direct: 0
+2019 06 02 04:33:10.011 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 1 Kb dealt with in 2 ms
+2019 06 02 04:33:10.011 UTC | 4 | INCOMING permit release (1, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:33:10.016 UTC | 4 | FutureWaiter completed get() loop.
+2019 06 02 04:33:10.016 UTC | 4 | FutureWaiter successfully completed a get() on com.mathworks.mvm.exec.FutureFevalResult@10b06ac3
+2019 06 02 04:33:10.016 UTC | 5 | Enqueuing a message: Command execution results for command 8
+Exception: null to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.016 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 13, bytes: 1328 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.017 UTC | 5 | Permit acquisition: heap: 1direct: 0
+2019 06 02 04:33:10.017 UTC | 4 | OUTGOING permit consume (1, 0) - fHeapKbConsumed: 1 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:33:10.017 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 02 04:33:10.018 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:33:10.018 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.018 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:33:10.019 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 1328 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:10.019 UTC | 5 | Permit release:  heap: 1 direct: 0
+2019 06 02 04:33:10.019 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 1 Kb dealt with in 2 ms
+2019 06 02 04:33:10.019 UTC | 4 | OUTGOING permit release (1, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:33:10.020 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 13
+2019 06 02 04:33:10.020 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.020 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:33:10.020 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:10.020 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.273 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:33:10.273 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 12, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 80
+2019 06 02 04:33:10.273 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:33:10.273 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.Messages.readHeaderInfo: Received message latency: 3
+2019 06 02 04:33:10.273 UTC | 5 | Configured for PmodeSerializable expecting 350
+2019 06 02 04:33:10.273 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read the payload
+2019 06 02 04:33:10.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 12, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 350
+2019 06 02 04:33:10.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Finished reading message with UID: 12, bytes: 430
+2019 06 02 04:33:10.274 UTC | 5 | Non-blocking permit acquisition: heap: 0direct: 0
+2019 06 02 04:33:10.274 UTC | 4 | INCOMING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:33:10.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:33:10.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 14, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: 0
+2019 06 02 04:33:10.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Completed reading a header
+2019 06 02 04:33:10.274 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.276 UTC | 5 | actual dispatch of com.mathworks.toolbox.distcomp.pmode.InitiateLabShutdown@f35a686 from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.276 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatch: Dispatching object of type:
+   com.mathworks.toolbox.distcomp.pmode.InitiateLabShutdown
+2019 06 02 04:33:10.276 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.DispatcherImpl.dispatchToList: Added  com.mathworks.toolbox.distcomp.pmode.InitiateLabShutdown to list of msg cache to be invoked by com.mathworks.toolbox.distcomp.pmode.LabShutdownHandlerImpl
+2019 06 02 04:33:10.277 UTC | 5 | Enqueuing a message: com.mathworks.toolbox.distcomp.pmode.ShutdownACKFromLab@22536cc0 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.278 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.enqueueMessageForSending: Sending message with UID: 15, bytes: 264 to: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.278 UTC | 5 | Permit acquisition: heap: 0direct: 0
+2019 06 02 04:33:10.278 UTC | 4 | OUTGOING permit consume (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 1
+2019 06 02 04:33:10.278 UTC | 5 | Enqueued message, queue size now: 1
+2019 06 02 04:33:10.278 UTC | 2 | Received InitiateLabShutdown, about to deactivate fErrorHandler.
+2019 06 02 04:33:10.278 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running addInterestOps(SelectionKey.OP_WRITE) for TransmissionChannel{fConnection=PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}} on select thread
+2019 06 02 04:33:10.279 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.279 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:33:10.279 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Write: 264 to: PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:10.279 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 02 04:33:10.279 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 1 ms
+2019 06 02 04:33:10.279 UTC | 4 | OUTGOING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:33:10.279 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: Finished sending message with UID: 15
+2019 06 02 04:33:10.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): Key 187636463 writable
+2019 06 02 04:33:10.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleWrite: removeInterestOps(SelectionKey.OP_WRITE) for PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:10.280 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.388 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead: Attempting to read a header
+2019 06 02 04:33:10.389 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.logDataRead: Reading into message UID: 14, from: MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, bytes: -1
+2019 06 02 04:33:10.389 UTC | 5 | Read -1: EOF for connection PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[connected local=/10.70.13.57:51726 remote=nxt1357/10.70.13.57:38902], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:10.389 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: EOF during handleSelect() on MatlabPoolPeerInstance{fUuid=9b724385-8cab-4872-b3cb-1221f4e398cb, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=1, fNumberOfLabs=3}
+2019 06 02 04:33:10.390 UTC | 5 | Notifying error handler of loss of communication to MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.391 UTC | 4 | ReturnMessageDispatcherImpl.communicationLost(MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, ...)
+2019 06 02 04:33:10.391 UTC | 4 | Exception: java.io.EOFException: EOF while reading from PlainConnection{fSocketChannel=java.nio.channels.SocketChannel[closed], fRemoteInstance=MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}, fJoinInfo=ServerSocketConnectInfo{fSocketAddress=nxt1357/10.70.13.57:38902, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fSecurityDescription=ConnectorPlainSecurityDescription, fJoinTimeLimit=60000, fDeadline=9223372036854775807, fConnectAttempts=5}}
+2019 06 02 04:33:10.391 UTC | 4 | [0] com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.detectEndOfFile(): 371
+2019 06 02 04:33:10.391 UTC | 4 | [1] com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.readFromChannel(): 385
+2019 06 02 04:33:10.391 UTC | 4 | [2] com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleRead(): 434
+2019 06 02 04:33:10.391 UTC | 4 | [3] com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel.handleSelect(): 320
+2019 06 02 04:33:10.391 UTC | 4 | [4] com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect(): 705
+2019 06 02 04:33:10.391 UTC | 4 | [5] com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.run(): 570
+2019 06 02 04:33:10.391 UTC | 4 | [6] java.lang.Thread.run(): 
+2019 06 02 04:33:10.412 UTC | 6 | com.mathworks.toolbox.parallel.pctutil.concurrent.NamedThreadFactory.newThread: Created new Thread Session fListenerExec-0
+2019 06 02 04:33:10.416 UTC | 0 | AbstractErrorHandler.maybeShutDown called with: The worker lost connection to the client. This might be due to network problems, or the interactive communicating job might have errored.
+2019 06 02 04:33:10.417 UTC | 0 | AbstractErrorHandler.maybeShutDown called with: The worker lost connection to the client. This might be due to network problems, or the interactive communicating job might have errored.
+2019 06 02 04:33:10.417 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.drainRunnableQueue: Running removeInstance( MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1} ) on select thread
+2019 06 02 04:33:10.417 UTC | 5 | About to call safeCloseTransmissionChannel for MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1}
+2019 06 02 04:33:10.417 UTC | 5 | About to remove MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1} from fExpectedInstances
+2019 06 02 04:33:10.417 UTC | 5 | Finished removing MatlabPoolPeerInstance{fUuid=a932699a-2e04-4dd5-ba9b-40b9c18906dd, fGroupUuid=8de07a8a-63ef-41c3-b22d-bbed7648d760, fLabIndex=-1, fNumberOfLabs=-1} from fExpectedInstances
+2019 06 02 04:33:10.417 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:10.417 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:12.280 UTC | 3 | Closing IO and stopping executors.
+2019 06 02 04:33:12.281 UTC | 3 | In closeIOStopExecutors with event data: NORMAL
+2019 06 02 04:33:12.281 UTC | 5 | KeepAlive fExecutor shut down
+2019 06 02 04:33:12.281 UTC | 3 | Unregister PathNotificationListener.
+2019 06 02 04:33:12.282 UTC | 3 | Unregister EditorListener.
+2019 06 02 04:33:12.282 UTC | 5 | Stopping fListenerExec.
+2019 06 02 04:33:12.282 UTC | 5 | Stopping fDispatcherExec.
+2019 06 02 04:33:12.282 UTC | 5 | Closing fCommGroup.
+2019 06 02 04:33:12.282 UTC | 5 | Closing channels
+2019 06 02 04:33:12.282 UTC | 5 | Shutting down select() thread
+2019 06 02 04:33:12.282 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:12.332 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.DirectCommunicationGroup.doSelect: doSelect(): fresh select
+2019 06 02 04:33:12.383 UTC | 5 | select() thread returning
+2019 06 02 04:33:12.383 UTC | 2 | DirectCommunicationGroup select thread exiting.
+2019 06 02 04:33:12.383 UTC | 5 | Joined select() thread, closing channels. fThread.isAlive() = false
+2019 06 02 04:33:12.383 UTC | 5 | Clearing TransmissionChannelAddressBook
+2019 06 02 04:33:12.383 UTC | 5 | Closing fMExec.
+2019 06 02 04:33:12.383 UTC | 5 | Closing fFutureWaiter.
+2019 06 02 04:33:12.384 UTC | 5 | Closing fSpmdExec.
+2019 06 02 04:33:12.384 UTC | 5 | Closing fTransfer.
+2019 06 02 04:33:12.384 UTC | 5 | Closing fReturnMessageRegistry.
+2019 06 02 04:33:12.384 UTC | 5 | Firing SessionEndedEvent listeners.
+2019 06 02 04:33:12.384 UTC | 3 | Closed IO, Executors and MExecutor.
+2019 06 02 04:33:12.385 UTC | 5 | Permit release:  heap: 0 direct: 0
+2019 06 02 04:33:12.385 UTC | 6 | com.mathworks.toolbox.distcomp.pmode.io.TransmissionChannel$MessageHolder.releaseAcquiredPermits: Message size: 0 Kb dealt with in 2111 ms
+2019 06 02 04:33:12.386 UTC | 4 | INCOMING permit release (0, 0) - fHeapKbConsumed: 0 of 51200, fDirectKbConsumed: 0 of 512000, fNumMessagesQueued: 0
+2019 06 02 04:33:12.386 UTC | 2 | Sending an interrupt to matlab.
+2019 06 02 04:33:12.389 UTC | 4 | About to call fMCR.interrupt 1, 26
+2019 06 02 04:33:12.390 UTC | 4 | Pushed 2 sNULL_MATLAB_COMMAND onto IQM 26
+2019 06 02 04:33:12.390 UTC | 2 | Interrupter has now started.
+2019 06 02 04:33:12.391 UTC | 2 | sDBCLEAR_COMMAND and sDBQUIT_COMMAND put on IQM
+2019 06 02 04:33:12.391 UTC | 4 | sNULL_MATLAB_COMMAND (1) complete, execution: COMPLETE, about to set flag, 1
+2019 06 02 04:33:12.391 UTC | 2 | Stopping the worker by running the command parallel.internal.pool.stopInteractiveWorker;
+2019 06 02 04:33:12.391 UTC | 4 | Interrupt thread ending
+2019 06 02 04:33:12.392 UTC | 2 | Finishing the session with command: dctFinishInteractiveSession;
+2019 06 02 04:33:12.393 UTC | 3 | ShutdownMonitor waiting for 120000 milliseconds.
+2019 06 02 04:33:12.393 UTC | 4 | sNULL_MATLAB_COMMAND (2) complete, execution: COMPLETE, about to set flag, 1
+2019 06 02 04:33:12.398 UTC | 4 | Completion observer with logMessage : sDBCLEAR_COMMAND with status 0
+2019 06 02 04:33:12.400 UTC | 4 | Completion observer with logMessage : sDBQUIT_COMMAND with status 0
+2019 06 02 04:33:12.406 UTC | 4 | MATLAB: Stopping interactive worker.
+2019 06 02 04:33:12.409 UTC | 3 | MATLAB: Destroying the current lab session object.
+2019 06 02 04:33:12.423 UTC | 2 | Stopping the worker was successful.
+2019 06 02 04:33:12.430 UTC | 5 | MATLAB: About to reset MPI functions.
+2019 06 02 04:33:12.431 UTC | 5 | MATLAB: About to run stored functions.
+2019 06 02 04:33:12.432 UTC | 5 | MATLAB: dctStoreFunctionArray('run') called with 5 functions.
+2019 06 02 04:33:12.435 UTC | 5 | MATLAB: dctEvaluateFunctionArray calling: @()taskPostFcn(taskPostFcnEvaluator) with args
+2019 06 02 04:33:12.437 UTC | 4 | MATLAB: About to shutdown pool
+2019 06 02 04:33:12.444 UTC | 4 | MATLAB: Pool shutdown complete - labs shutdown OK == 1
+2019 06 02 04:33:12.446 UTC | 4 | MATLAB: Changing directory back to original working directory: /general/home/vedang.deshpande
+2019 06 02 04:33:12.447 UTC | 4 | MATLAB: About to call taskFinish
+2019 06 02 04:33:12.455 UTC | 5 | MATLAB: dctEvaluateFunctionArray done.
+2019 06 02 04:33:12.456 UTC | 5 | MATLAB: dctEvaluateFunctionArray calling: iFinishTask with args
+2019 06 02 04:33:12.550 UTC | 4 | MATLAB: About to call pPostTaskEvaluate
+2019 06 02 04:33:12.690 UTC | 4 | MATLAB: About to call pPostJobEvaluate
+2019 06 02 04:33:12.717 UTC | 5 | MATLAB: dctEvaluateFunctionArray done.
+2019 06 02 04:33:12.718 UTC | 5 | MATLAB: dctEvaluateFunctionArray calling: removeDirectory with args
+2019 06 02 04:33:12.724 UTC | 5 | MATLAB: dctEvaluateFunctionArray done.
+2019 06 02 04:33:12.725 UTC | 5 | MATLAB: dctEvaluateFunctionArray calling: removeDirectory with args
+2019 06 02 04:33:12.784 UTC | 1 | MATLAB: Removed /tmp/tpc00cb745_9b9f_4cc4_81b6_41e1ec756c3crp3878 with result: 1, message: 
+2019 06 02 04:33:12.785 UTC | 5 | MATLAB: dctEvaluateFunctionArray done.
+2019 06 02 04:33:12.786 UTC | 5 | MATLAB: dctEvaluateFunctionArray calling: iExitFunction with args
+2019 06 02 04:33:12.787 UTC | 0 | MATLAB: About to exit MATLAB normally
+2019 06 02 04:33:12.788 UTC | 0 | MATLAB: About to exit with code: 0
+2019 06 02 04:33:12.793 UTC | 2 | RotatingFileHandler.flush() called
+2019 06 02 04:33:12.793 UTC | 2 | RotatingFileHandler.flush() complete

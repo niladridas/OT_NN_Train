@@ -1,0 +1,12 @@
+language: julia
+julia:
+    - 0.6
+    - 0.7
+    - 1.0
+    - release
+    - nightly
+os:
+    - linux
+    - osx
+matrix:
+    fast_finish: true

@@ -7,10 +7,10 @@ load('data/trained_NN_complete_data.mat');
 % Gen testing data
 % Out of 583 input data, 200 is used for training, the next 200 is used for
 % testing.
-% y2= y1(201:583);
-y2=y1;
+y2= y1(201:250);
+% y2=y1;
 kEnd = length(y2);
-% iP = iP(201:583,:); % Testing input data
+iP = iP(201:250,:); % Testing input data
 % Initializing test output-data set
 yEKFtest = zeros(length(y2),1);
 yEnKFtest = zeros(length(y2),1);
@@ -44,12 +44,12 @@ disp('OTF Testing Done.')
 yMeas = y1;
 save('./data/testresults.mat','y2','yEKFtest','yEnKFtest','yUKFtest','yOTFtest');
 
-%% Plotting
-% figure(1); hold on; box; grid;
-% plot([yEKF;yEKFtest],'b--','LineWidth',1);
-% plot([yEnKF;yEnKFtest],'k--','LineWidth',1);
-% plot([yUKF;yUKFtest],'g--','LineWidth',1);
-% plot([yOTF;yOTFtest],'c--','LineWidth',1);
-% plot(y1,'r','LineWidth',1);
-% legend('y_{EKF}','y_{EnKF}','y_{UKF}','y_{OT}','y_{real}');
-% drawnow;
+% Plotting
+figure(1); hold on; box; grid;
+plot([yEKF;yEKFtest],'b--','LineWidth',1);
+plot([yEnKF;yEnKFtest],'k--','LineWidth',1);
+plot([yUKF;yUKFtest],'g--','LineWidth',1);
+plot([yOTF;yOTFtest],'c--','LineWidth',1);
+plot(y1(1:250),'r','LineWidth',1);
+legend('y_{EKF}','y_{EnKF}','y_{UKF}','y_{OT}','y_{real}');
+drawnow;

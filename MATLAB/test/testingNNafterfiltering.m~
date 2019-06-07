@@ -62,7 +62,7 @@ p5 = plot(y1(1:250),'LineWidth',2);
 p5.Color = 'r';
 p5.LineStyle = '-';
 ax = gca;
-ax.FontSize = 20;
+ax.FontSize = 15;
 ax.FontWeight = 'bold';
 ax.XLabel.String = 'Time';
 ax.YLabel.String = 'Normalized Output';
@@ -70,12 +70,6 @@ ax.Title.String = 'Training and testing performance of NN trained using differen
 p6 = plot(200*ones(1,10),linspace(0,1,10),'LineWidth',2);
 lgd = legend([p1,p2,p3,p4,p5],'y_{EKF}','y_{EnKF}','y_{UKF}','y_{OT}','y_{real}');
 lgd.Location = 'northwest';
-txt1 = 'Training \rightarrow';
-txt2 = '\leftarrow Testing';
-text(200,0.95,txt1,'HorizontalAlignment','right','FontSize',20,'FontWeight','bold');
-text(200,0.95,txt2,'HorizontalAlignment','left','FontSize',20,'FontWeight','bold');
+txt = 'Training';
+text(200,0.8,txt,'HorizontalAlignment','right')
 drawnow;
-
-%%
-keyboard;
-fig.PaperPositionMode = 'auto';

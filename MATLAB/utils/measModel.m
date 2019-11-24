@@ -10,4 +10,6 @@
 function y = measModel(NN,ip)
         [A,~] = forwardprop(NN,ip);
         y = A{end};
+        
+        
 end

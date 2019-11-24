@@ -1,20 +1,18 @@
 % Author: Vedang Deshpande
-% Date: 14th May 2019
+% Date: 24th Nov 2019
 % Training NN using non-linear filters
 % Note: States here are the parameters of neural network
 clc; clear; close all;
 %% Initialize
 % rng('default');
+load('C:\_WORK_SPACE\UqLab\NeuralNets\OT_NN_Train\MATLAB\data\network1_trained.mat')
 load('data/trained_NN_complete_data.mat')
-% NN_EKF = NNconstruct(ni,Ln,0); % We will train this NN using EKF
-% w_true = nn2param(NN); 
-% NN_EKF = param2nn(NN_EKF,w_true+1*rand(length(w_true),1));
-% NN_UKF = NN_EKF; NN_OTF = NN_EKF; NN_EnKF = NN_EKF;
 
-Ln = [10;12;1]; % no. of nodes in NN
-x0 = nn2param(NNconstruct(ni,Ln,rand)); % Initial state
+
+
+x0 = getParams(network1); % Initial state
 nx  = length(x0); % Number of states
-ny = Ln(end); % Number of measurements = no. of o/p of NN
+ny = 1; % Number of measurements = no. of o/p of NN
 Inx  = eye(nx);
 Ast = Inx; % State transition matrix is identity
 
@@ -23,15 +21,14 @@ var_proc = 0.01; % variance of process noise
 var_initState = 1; % initial state covariance
 
 P0 = var_initState*Inx; % Initial state covariance matrix
-% P0 = 2*rand(nx,nx)-1; P0 = (P0*P0.'); P0 = var_initState*P0/max(eig(P0));
 Q = var_proc*Inx; % Process noise covariance matrix
 R = var_meas*eye(ny); % Measurements noise covariance matrix
-y1 = oP(250:500,:);
-iP = iP(250:500,:);
+y1 = oP(300:310,:);
+iP = iP(300:310,:);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 20;
-nRepeat = 4;
+maxEpoch = 1;
+nRepeat = 1;
 arrRepeat = 1:20;
 
 % figure(1); clf; hold on; box; grid;
@@ -41,12 +38,13 @@ arrRepeat = 1:20;
 % drawnow;
 
 nSample = 2*nx+1;
-
+NN_init = init(network1);
 %% EKF Code
 yEKF=zeros(kEnd,maxEpoch,nRepeat);
-parfor (iRep = 1:nRepeat,4)
+
+for iRep = 1:nRepeat
     fprintf('EKF: Rep = %d\n',iRep);
-    yEKF(:,:,iRep) = multipleEpochEKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
+    [yEKF(:,:,iRep),NN_EKF] = multipleEpochEKF2(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NN_init);
 end % repeat
 
 for iRep = 1:nRepeat
@@ -66,7 +64,7 @@ disp('EKF Done.')
 yEnKF=zeros(kEnd,maxEpoch,nRepeat);
 parfor iRep = 1:nRepeat
     fprintf('EnKF: Rep = %d\n',iRep);
-    yEnKF(:,:,iRep) = multipleEpochEnKF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
+    [yEnKF(:,:,iRep), NN_EnKF] = multipleEpochEnKF2(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NN_init);
     % 
 end % repeat
 
@@ -84,9 +82,9 @@ disp('EnKF Done.')
 
 %% UKF Code 
 yUKF=zeros(kEnd,maxEpoch,nRepeat);
-parfor iRep = 1:nRepeat
+for iRep = 1:nRepeat
     fprintf('UKF: Rep = %d\n',iRep);
-    yUKF(:,:,iRep) = multipleEpochUKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
+    [yUKF(:,:,iRep),NN_UKF] = multipleEpochUKF2(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NN_init);
 end % repeat
 
 for iRep = 1:nRepeat
@@ -105,10 +103,10 @@ disp('UKF Done.')
 tic
 yOTF=zeros(kEnd,maxEpoch,nRepeat);
 % parfor (iRep = 1:nRepeat,2)
-for iRep = 6:10
+for iRep = 1:nRepeat
     clc
     fprintf('OTF: Rep = %d\n',iRep);
-    yOTF(:,:,iRep) = multipleEpochOTF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
+    yOTF(:,:,iRep) = multipleEpochOTF2(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NN_init);
 end % repeat
 
 for iRep = 1:nRepeat

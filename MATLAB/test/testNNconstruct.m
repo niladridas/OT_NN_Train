@@ -4,7 +4,7 @@ clc;clear;close all;
 format long 
 
 load('data/X.mat');
-X_nn = X(1:600,1); % use this X to train NN
+X_nn = X(250:end,1); % use this X to train NN
 % Normalize the data
 X_nn = (X_nn - min(X_nn))./(max(X_nn)-min(X_nn));
 del = 17; % delay parameter
@@ -16,19 +16,21 @@ end
 
 
 ni = del;
-Ln = [10;12;1];
+Ln = [6;5;1];
 eta = 0.25;
 maxitr = 2000;
-NN = NNconstruct(ni,Ln); % Weights and Bias randomly initialized
+NN = NNconstruct(ni,Ln,rand); % Weights and Bias randomly initialized
 avgDelta = 1;
 tau =1;
 % while avgDelta > 1e-3
 for tau = 1: maxitr
     clc
     fprintf('Itr = %d.\n', tau)
+    fprintf('eta = %f.\n', eta)
     [Wnext,Bnext,avgDelta] = weightbiasup(NN,iP,oP,eta);
     NN.W = Wnext;
     NN.B = Bnext;
+    %eta = max(0.99*eta,1e-2);
 %     tau =tau+1;
 end
 % end
@@ -44,7 +46,7 @@ end
 % load('data/oP.mat'); % Normalized real output data 
 % load('data/y1.mat'); % NN output
 % load('data/X.mat');
-figure; clf; hold on;
+figure(1); clf; hold on;
 plot(oP,'r','Linewidth',1)
 plot(y1,'b','Linewidth',1)
 legend('Real','NN')%, 'X')

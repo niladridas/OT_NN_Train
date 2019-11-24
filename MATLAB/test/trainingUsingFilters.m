@@ -11,7 +11,7 @@ load('data/trained_NN_complete_data.mat')
 % NN_EKF = param2nn(NN_EKF,w_true+1*rand(length(w_true),1));
 % NN_UKF = NN_EKF; NN_OTF = NN_EKF; NN_EnKF = NN_EKF;
 
-Ln = [10;12;1]; % no. of nodes in NN
+Ln = [5;5;1]; % no. of nodes in NN
 x0 = nn2param(NNconstruct(ni,Ln,rand)); % Initial state
 nx  = length(x0); % Number of states
 ny = Ln(end); % Number of measurements = no. of o/p of NN
@@ -26,12 +26,12 @@ P0 = var_initState*Inx; % Initial state covariance matrix
 % P0 = 2*rand(nx,nx)-1; P0 = (P0*P0.'); P0 = var_initState*P0/max(eig(P0));
 Q = var_proc*Inx; % Process noise covariance matrix
 R = var_meas*eye(ny); % Measurements noise covariance matrix
-y1 = oP(250:500,:);
-iP = iP(250:500,:);
+y1 = oP(300:500,:);
+iP = iP(300:500,:);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 20;
-nRepeat = 4;
+maxEpoch = 10;
+nRepeat = 1;
 arrRepeat = 1:20;
 
 % figure(1); clf; hold on; box; grid;

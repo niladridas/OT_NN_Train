@@ -5,10 +5,12 @@ P_prev = P0;
 yEKF=zeros(kEnd,maxEpoch);
 Inx = eye(length(x0));
 Ast = Inx;
+eta = 1;
 for iEp = 1:maxEpoch
+    eta = max(0.95*eta,0.1);
     for k = 1:kEnd
         % clc; 
-        % fprintf('EKF: Epoch = %d, k = %d.\n',iEp,k);
+        fprintf('EKF: Epoch = %d, k = %d.\n',iEp,k);
 
         % EKF Propagation/Prediction
         x_pr = Ast*x_prev; % x-(k) a priori state estimate
@@ -18,7 +20,7 @@ for iEp = 1:maxEpoch
         NN_EKF =  param2nn(NN_EKF,x_pr); % Update parameters of the NN
         res = yMeas(k,1) - measModel(NN_EKF,iP(k,:)'); % Innovation/ Measurement residual
         H = nnJacobian(NN_EKF,iP(k,:)'); % Jacobian of measurement model w.r.t states (NN Params in this case)
-        KK = P_pr*H'/(H*P_pr*H'+R); % Kalman Gain
+        KK = eta*P_pr*H'/(H*P_pr*H'+R); % Kalman Gain
         x_pst = x_pr + KK*res; % a posteriori state estimate
         P_pst = (Inx-KK*H)*P_pr; % a posteriori state covariance matrix
 

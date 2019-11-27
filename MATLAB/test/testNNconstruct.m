@@ -6,9 +6,14 @@ format long
 load('data/X.mat');
 X_nn = X(250:end,1); % use this X to train NN
 % Normalize the data
-X_nn = (X_nn - min(X_nn))./(max(X_nn)-min(X_nn));
-del = 17; % delay parameter
+% X_nn = (X_nn - min(X_nn))./(max(X_nn)-min(X_nn));
 
+
+alp = 2/(max(X_nn)-min(X_nn)); bet = 1- 2*max(X_nn)/(max(X_nn)-min(X_nn));
+
+X_nn = alp*X_nn + bet;
+
+del = 17; % delay parameter
 for i=1:(size(X_nn,1)-del)
     iP(i,:) = X_nn(i:(i+del-1),1)';
     oP(i,1) = X_nn(i+del,1);
@@ -16,9 +21,9 @@ end
 
 
 ni = del;
-Ln = [6;5;1];
+Ln = [6;4;2;1];
 eta = 0.25;
-maxitr = 2000;
+maxitr = 500;
 NN = NNconstruct(ni,Ln,rand); % Weights and Bias randomly initialized
 avgDelta = 1;
 tau =1;
@@ -30,7 +35,7 @@ for tau = 1: maxitr
     [Wnext,Bnext,avgDelta] = weightbiasup(NN,iP,oP,eta);
     NN.W = Wnext;
     NN.B = Bnext;
-    %eta = max(0.99*eta,1e-2);
+    eta = max(0.999*eta,1e-2);
 %     tau =tau+1;
 end
 % end

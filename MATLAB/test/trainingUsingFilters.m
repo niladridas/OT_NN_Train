@@ -5,7 +5,7 @@
 clc; clear; close all;
 %% Initialize
 % rng('default');
-load('data/trained_NN_complete_data.mat')
+load('data/trained_NN_complete_data2.mat')
 % NN_EKF = NNconstruct(ni,Ln,0); % We will train this NN using EKF
 % w_true = nn2param(NN); 
 % NN_EKF = param2nn(NN_EKF,w_true+1*rand(length(w_true),1));
@@ -26,11 +26,11 @@ P0 = var_initState*Inx; % Initial state covariance matrix
 % P0 = 2*rand(nx,nx)-1; P0 = (P0*P0.'); P0 = var_initState*P0/max(eig(P0));
 Q = var_proc*Inx; % Process noise covariance matrix
 R = var_meas*eye(ny); % Measurements noise covariance matrix
-y1 = oP(300:500,:);
-iP = iP(300:500,:);
+y1 = oP(1:300,:);
+iP = iP(1:300,:);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 10;
+maxEpoch = 100;
 nRepeat = 1;
 arrRepeat = 1:20;
 
@@ -44,7 +44,7 @@ nSample = 2*nx+1;
 
 %% EKF Code
 yEKF=zeros(kEnd,maxEpoch,nRepeat);
-parfor (iRep = 1:nRepeat,4)
+for iRep = 1:nRepeat
     fprintf('EKF: Rep = %d\n',iRep);
     yEKF(:,:,iRep) = multipleEpochEKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
 end % repeat
@@ -56,8 +56,8 @@ for iRep = 1:nRepeat
 end
 disp('EKF Done.')
 
-% figure(1); hold on; box; grid;
-% plot(yEKF(:,end),'b--','LineWidth',1) 
+figure(1); hold on; box; grid;
+plot(yEKF(:,end),'b--','LineWidth',1) 
 % figure(2); hold on; box; grid;
 % plot(abs(yEKF(:,end)-y1)./abs(y1),'b--','LineWidth',1) 
 % drawnow;
@@ -84,7 +84,7 @@ disp('EnKF Done.')
 
 %% UKF Code 
 yUKF=zeros(kEnd,maxEpoch,nRepeat);
-parfor iRep = 1:nRepeat
+for iRep = 1:nRepeat
     fprintf('UKF: Rep = %d\n',iRep);
     yUKF(:,:,iRep) = multipleEpochUKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
 end % repeat
@@ -105,7 +105,7 @@ disp('UKF Done.')
 tic
 yOTF=zeros(kEnd,maxEpoch,nRepeat);
 % parfor (iRep = 1:nRepeat,2)
-for iRep = 6:10
+for iRep = 1:nRepeat
     clc
     fprintf('OTF: Rep = %d\n',iRep);
     yOTF(:,:,iRep) = multipleEpochOTF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));

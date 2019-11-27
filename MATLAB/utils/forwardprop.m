@@ -6,6 +6,10 @@ function [A,Z] = forwardprop(NN,x)
             a = A{i-1};
         end
         Z{i} = NN.W{i}*a+NN.B{i};
-        A{i} = sigmoid(Z{i});
+%         if i < length(NN.W)
+            A{i} = sigmoid(Z{i});
+%         else
+%             A{i} = Z{i};
+%         end
     end
 end

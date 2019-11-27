@@ -23,6 +23,9 @@ function NN = NNconstruct(ni,Ln,seed)
         end
         W{i} = (2*rand(Ln(i,1),k)-1); % [-1 1]
         B{i} = (2*rand(Ln(i,1),1)-1);
+        
+%         W{i} = (1*rand(Ln(i,1),k)); % [0 1]
+%         B{i} = rand(Ln(i,1),1); % [0, 1]
     end
     NN.W = W;
     NN.B = B;

@@ -14,7 +14,7 @@
 %
 % Propagates init samples for one epoch. One epoch = no. of measurements
 
-function [xSamples_Post,W_pr] = OTF(xSamples_init,fstate,hmeas,yMeas,Q,R,iP)
+function [xSamples_Post,W_pr] = OTF(xSamples_init,fstate,hmeas,yMeas,Q,R,iP,eta)
     likfun = @(y,x,ip)exp(-0.5*(y-hmeas(x,ip))'*(R\(y-hmeas(x,ip))));
     [nx,nSample] = size(xSamples_init); 
     [kEnd,~] = size(yMeas); % no. of time steps

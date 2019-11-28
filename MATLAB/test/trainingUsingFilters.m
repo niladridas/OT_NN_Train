@@ -30,7 +30,7 @@ y1 = oP(1:300,:);
 iP = iP(1:300,:);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 100;
+maxEpoch = 10;
 nRepeat = 1;
 arrRepeat = 1:20;
 
@@ -41,6 +41,11 @@ arrRepeat = 1:20;
 % drawnow;
 
 nSample = 2*nx+1;
+
+NN_init = NNconstruct(ni,Ln,1);
+for k = 1:kEnd
+    y_init(k,1) = measModel(NN_init,iP(k,:)');
+end
 
 %% EKF Code
 yEKF=zeros(kEnd,maxEpoch,nRepeat);
@@ -60,11 +65,11 @@ figure(1); hold on; box; grid;
 plot(yEKF(:,end),'b--','LineWidth',1) 
 % figure(2); hold on; box; grid;
 % plot(abs(yEKF(:,end)-y1)./abs(y1),'b--','LineWidth',1) 
-% drawnow;
+drawnow;
 
 %% EnKF Code
 yEnKF=zeros(kEnd,maxEpoch,nRepeat);
-parfor iRep = 1:nRepeat
+for iRep = 1:nRepeat
     fprintf('EnKF: Rep = %d\n',iRep);
     yEnKF(:,:,iRep) = multipleEpochEnKF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
     % 
@@ -76,11 +81,11 @@ for iRep = 1:nRepeat
     end % epoch
 end
 disp('EnKF Done.')
-% figure(1); hold on; box; grid;
-% plot(yEnKF(:,end),'k--','LineWidth',1) 
+figure(1); hold on; box; grid;
+plot(yEnKF(:,end),'k--','LineWidth',1) 
 % figure(2); hold on; box; grid;
 % plot(abs(yEnKF(:,end)-y1)./abs(y1),'k--','LineWidth',1) 
-% drawnow;
+drawnow;
 
 %% UKF Code 
 yUKF=zeros(kEnd,maxEpoch,nRepeat);
@@ -95,11 +100,11 @@ for iRep = 1:nRepeat
     end % epoch
 end
 disp('UKF Done.')
-% figure(1); hold on; box; grid;
-% plot(yUKF(:,end),'g--','LineWidth',1) 
+figure(1); hold on; box; grid;
+plot(yUKF(:,end),'g--','LineWidth',1) 
 % figure(2); hold on; box; grid;
 % plot(abs(yUKF(:,end)-y1)./abs(y1),'g--','LineWidth',1) 
-% drawnow;
+drawnow;
 
 %% OTF Code
 tic
@@ -118,12 +123,12 @@ for iRep = 1:nRepeat
 end
 disp('OTF Done.')
 toc
-save OTF_ref_6_to_10.mat
-% figure(1); hold on; box; grid;
-% plot(yOTF(:,Ep_OTF),'m--','LineWidth',1) 
+% save OTF_ref_6_to_10.mat
+figure(1); hold on; box; grid;
+plot(yOTF(:,end),'m--','LineWidth',1) 
 % figure(2); hold on; box; grid;
 % plot(abs(yOTF(:,Ep_OTF)-y1)./abs(y1),'m--','LineWidth',1) 
-% drawnow;
+drawnow;
 
 %% Plot
 % figure(1); clf; hold on; box; grid;

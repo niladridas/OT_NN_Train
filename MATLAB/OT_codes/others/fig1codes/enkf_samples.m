@@ -1,4 +1,4 @@
-function a_samples = enkf_samples(X, Y, Y_predict, R)
+function a_samples = enkf_samples(X, Y, Y_predict, R, kk_et)
 %   enkf_samples:  Returns EnKF updated samples.
 % 
 %   a_samples = enkf_samples(X, Y, Y_predict, R)
@@ -35,6 +35,6 @@ function a_samples = enkf_samples(X, Y, Y_predict, R)
     end
     P_xyb = (1/(Ns-1))*sum(temp_pxyb,3);
     P_yy = (1/(Ns-1))*sum(temp_pyy,3);
-    K = P_xyb/P_yy;
+    K = kk_et*P_xyb/P_yy;
     a_samples = X + K*(Y.*ones(ny,Ns)-Y_predict-eta_all);
 end

@@ -5,10 +5,12 @@ hmeas = @(x,ip)(measModel(param2nn(NN_OTF,x),ip));
 fstate = @(x,ip)(x);
 xSamples_prev = xInitSamples;
 yOTF=zeros(kEnd,maxEpoch);
+eta = 1;
 for iEp = 1:maxEpoch
+    eta = max(0.5*eta,0.1);
     % clc;
-    % fprintf('  Epoch = %d.\n',iEp);
-    [xSamples_pst,W_pst] = OTF(xSamples_prev,fstate,hmeas,yMeas,Q,R,iP);
+    fprintf('OTF:  Epoch = %d.\n',iEp);
+    [xSamples_pst,W_pst] = OTF(xSamples_prev,fstate,hmeas,yMeas,eta*Q,R,iP,1);
     x_pst = xSamples_pst*W_pst';
     xSamples_prev = xSamples_pst;
     

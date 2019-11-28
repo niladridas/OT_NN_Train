@@ -9,10 +9,13 @@ PAug0 = [P0,                    zeros(nx,nx+ny);
 xAug_prev = xAug0; 
 PAug_prev = PAug0; 
 yUKF=zeros(kEnd,maxEpoch);
+eta = 1;
 for iEp = 1:maxEpoch
+    eta = max(0.5*eta,0.1);
+    fprintf('UKF: Epoch = %d.\n',iEp);
     for k = 1:kEnd
         % clc;
-        % fprintf('UKF: Epoch = %d, k = %d.\n',iEp,k);
+        
         
         [xAugSP,Wm,Wc] = getSigmaPts(xAug_prev,PAug_prev,(1e-2),0,2); % sigma pts of augemented state
         nPt = size(xAugSP,2); % no. of sigma pts
@@ -61,7 +64,7 @@ for iEp = 1:maxEpoch
          
         xAug_prev = [x_pst;procMean;measMean];
         PAug_prev = [P_pst,                    zeros(nx,nx+ny);
-            zeros(nx,nx+ny)', diag([diag(Q);diag(R)])];
+            zeros(nx,nx+ny)', diag([eta*diag(Q);diag(R)])];
     end % k
     % Evaluate o/p of NN using a posteriori parameters estimates
     NN_UKF = param2nn(NN_UKF,x_pst); % Update parameters of the NN

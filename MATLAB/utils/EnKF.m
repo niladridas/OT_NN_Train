@@ -14,7 +14,7 @@
 %
 % Propagates init samples for one epoch. One epoch = no. of measurements
 
-function [xSamples_Post,W_pr] = EnKF(xSamples_init,fstate,hmeas,yMeas,Q,R,iP)
+function [xSamples_Post,W_pr] = EnKF(xSamples_init,fstate,hmeas,yMeas,Q,R,iP,eta)
     [nx,nSample] = size(xSamples_init); 
     [kEnd,~] = size(yMeas); % no. of time steps
     W_pr = ones(1,nSample)/nSample; % Prior is equally weighted
@@ -32,7 +32,7 @@ function [xSamples_Post,W_pr] = EnKF(xSamples_init,fstate,hmeas,yMeas,Q,R,iP)
         for i = 1:nSample
             ySamples_pr(:,i) = hmeas(xSamples_pr(:,i),iP(k,:)');
         end
-        xSamples_pst = enkf_samples(xSamples_pr, yMeas(k,:)',ySamples_pr,R);       
+        xSamples_pst = enkf_samples(xSamples_pr, yMeas(k,:)',ySamples_pr,R,eta);       
         xSamples_prev = xSamples_pst;
     end % k
     xSamples_Post = xSamples_pst; % Equally weighted samples after one epoch

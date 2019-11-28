@@ -21,8 +21,8 @@ function NN = NNconstruct(ni,Ln,seed)
         else
             k = Ln(i-1,1);
         end
-        W{i} = (2*rand(Ln(i,1),k)-1); % [-1 1]
-        B{i} = (2*rand(Ln(i,1),1)-1);
+        W{i} = 1*(2*rand(Ln(i,1),k)-1); % [-1 1]
+        B{i} = 0.1*(2*rand(Ln(i,1),1)-1);
         
 %         W{i} = (1*rand(Ln(i,1),k)); % [0 1]
 %         B{i} = rand(Ln(i,1),1); % [0, 1]

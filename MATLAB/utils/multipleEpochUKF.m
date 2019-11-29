@@ -3,9 +3,13 @@ function yUKF = multipleEpochUKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NN_UKF)
 % Augmented state = [state; process_noise; measurement_noise]; 
 x0 = nn2param(NN_UKF); nx = length(x0); ny = size(NN_UKF.B{end},1);
 procMean = zeros(nx,1); measMean = zeros(ny,1);
-xAug0 = [x0;procMean;measMean];
-PAug0 = [P0,                    zeros(nx,nx+ny);
-         zeros(nx,nx+ny)', diag([diag(Q);diag(R)])];
+% xAug0 = [x0;procMean;measMean];
+% PAug0 = [P0,                    zeros(nx,nx+ny);
+%          zeros(nx,nx+ny)', diag([diag(Q);diag(R)])];
+
+xAug0 = [x0;measMean];
+PAug0 = [P0,    zeros(nx,ny);
+ zeros(nx,ny)', R];
 xAug_prev = xAug0; 
 PAug_prev = PAug0; 
 yUKF=zeros(kEnd,maxEpoch);
@@ -20,14 +24,14 @@ for iEp = 1:maxEpoch
         [xAugSP,Wm,Wc] = getSigmaPts(xAug_prev,PAug_prev,(1e-2),0,2); % sigma pts of augemented state
         nPt = size(xAugSP,2); % no. of sigma pts
         xSP = xAugSP(1:nx,:); % sigma points of the actual state
-        procSP =  xAugSP(nx+1:nx+nx,:); % sigma points of the process noise
-        measSP = xAugSP(nx+nx+1:end,:); % sigma points of the measurement noise
+        % procSP =  xAugSP(nx+1:nx+nx,:); % sigma points of the process noise
+        measSP = xAugSP(nx+1:end,:); % sigma points of the measurement noise
         
 %         [xSP,Wm,Wc] = getSigmaPts(x_prev,P_prev,1e-3,0,2);
 %         nPt = size(xSP,2); % no. of sigma pts
         
         % UKF Time Update
-        xSP_pr = xSP +  procSP; % parameter dynamics with identity state transition matrix
+        xSP_pr = xSP ;%+  procSP; % parameter dynamics with identity state transition matrix
 %         xSP_pr = xSP + mvnrnd(procMean,Q,nPt)';
 %         xSP_pr = xSP;
 
@@ -62,9 +66,12 @@ for iEp = 1:maxEpoch
         x_prev = x_pst;
         P_prev = P_pst;
          
-        xAug_prev = [x_pst;procMean;measMean];
-        PAug_prev = [P_pst,                    zeros(nx,nx+ny);
-            zeros(nx,nx+ny)', diag([eta*diag(Q);diag(R)])];
+%         xAug_prev = [x_pst;procMean;measMean];
+%         PAug_prev = [P_pst,                    zeros(nx,nx+ny);
+%             zeros(nx,nx+ny)', diag([eta*diag(Q);diag(R)])];
+        xAug_prev = [x_pst;measMean];
+        PAug_prev = [P_pst,                    zeros(nx,ny);
+            zeros(nx,ny)', R];
     end % k
     % Evaluate o/p of NN using a posteriori parameters estimates
     NN_UKF = param2nn(NN_UKF,x_pst); % Update parameters of the NN

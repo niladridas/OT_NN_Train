@@ -30,7 +30,7 @@ y1 = oP(1:300,:);
 iP = iP(1:300,:);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 10;
+maxEpoch = 20;
 nRepeat = 1;
 arrRepeat = 1:20;
 
@@ -40,7 +40,7 @@ arrRepeat = 1:20;
 % figure(2); clf; hold on; box; grid;
 % drawnow;
 
-nSample = 2*nx+1;
+nSample = (2*nx+1);
 
 NN_init = NNconstruct(ni,Ln,1);
 for k = 1:kEnd

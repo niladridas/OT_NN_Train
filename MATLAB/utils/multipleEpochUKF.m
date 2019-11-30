@@ -10,6 +10,7 @@ procMean = zeros(nx,1); measMean = zeros(ny,1);
 xAug0 = [x0;measMean];
 PAug0 = [P0,    zeros(nx,ny);
  zeros(nx,ny)', R];
+
 xAug_prev = xAug0; 
 PAug_prev = PAug0; 
 yUKF=zeros(kEnd,maxEpoch);
@@ -24,16 +25,14 @@ for iEp = 1:maxEpoch
         [xAugSP,Wm,Wc] = getSigmaPts(xAug_prev,PAug_prev,(1e-2),0,2); % sigma pts of augemented state
         nPt = size(xAugSP,2); % no. of sigma pts
         xSP = xAugSP(1:nx,:); % sigma points of the actual state
-        % procSP =  xAugSP(nx+1:nx+nx,:); % sigma points of the process noise
+%         procSP =  xAugSP(nx+1:nx+nx,:); % sigma points of the process noise
         measSP = xAugSP(nx+1:end,:); % sigma points of the measurement noise
         
-%         [xSP,Wm,Wc] = getSigmaPts(x_prev,P_prev,1e-3,0,2);
-%         nPt = size(xSP,2); % no. of sigma pts
+
         
         % UKF Time Update
-        xSP_pr = xSP ;%+  procSP; % parameter dynamics with identity state transition matrix
-%         xSP_pr = xSP + mvnrnd(procMean,Q,nPt)';
-%         xSP_pr = xSP;
+        xSP_pr = xSP;% +  procSP; % parameter dynamics with identity state transition matrix
+
 
         x_pr = xSP_pr*Wm'; % a priori state estimate = weighted sum of prior sigma pts
         tmpP1 = xSP_pr - x_pr; P_pr = zeros(nx,nx);
@@ -65,7 +64,7 @@ for iEp = 1:maxEpoch
         
         x_prev = x_pst;
         P_prev = P_pst;
-         
+%          
 %         xAug_prev = [x_pst;procMean;measMean];
 %         PAug_prev = [P_pst,                    zeros(nx,nx+ny);
 %             zeros(nx,nx+ny)', diag([eta*diag(Q);diag(R)])];

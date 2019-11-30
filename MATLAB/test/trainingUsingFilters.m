@@ -26,11 +26,11 @@ P0 = var_initState*Inx; % Initial state covariance matrix
 % P0 = 2*rand(nx,nx)-1; P0 = (P0*P0.'); P0 = var_initState*P0/max(eig(P0));
 Q = var_proc*Inx; % Process noise covariance matrix
 R = var_meas*eye(ny); % Measurements noise covariance matrix
-y1 = oP(1:300,:);
-iP = iP(1:300,:);
+y1 = oP(1:200,:);
+iP = iP(1:200,:);
 yMeas = y1 + normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 20;
+maxEpoch = 5;
 nRepeat = 1;
 arrRepeat = 1:20;
 

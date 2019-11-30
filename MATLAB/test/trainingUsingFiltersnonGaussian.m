@@ -12,8 +12,8 @@ var_proc = 0.01; % variance of process noise
 var_initState = 2; % initial state covariance
 P0 = var_initState*Inx; % Initial state covariance matrix
 Q = var_proc*Inx; % Process noise covariance matrix
-A = [-0.3;0.3];
-B = [2;2];
+A = [-0.1;0.1];
+B = [1;1];
 W = [0.3;0.7];
 likfun = @(x) GaussBimodalPdf(A,B,W,x);
 % likfun = @(y,x,ip)exp(-0.5*(y-hmeas(x,ip))'*(R\(y-hmeas(x,ip))));
@@ -25,7 +25,7 @@ yMeas = y1 + GaussBimodalSamples(A,length(y1),B,W);
 
 % normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 10;
+maxEpoch = 20;
 nRepeat = 1;
 arrRepeat = 1:20;
 nSample = 4*nx+1;
@@ -33,7 +33,7 @@ NN_init = NNconstruct(ni,Ln,1);
 for k = 1:kEnd
     y_init(k,1) = measModel(NN_init,iP(k,:)');
 end
-% %% EKF Code
+% % %% EKF Code
 % yEKF=zeros(kEnd,maxEpoch,nRepeat);
 % for iRep = 1:nRepeat
 %     fprintf('EKF: Rep = %d\n',iRep);
@@ -47,38 +47,38 @@ end
 % disp('EKF Done.')
 % drawnow;
 % 
-% %% EnKF Code
-% yEnKF=zeros(kEnd,maxEpoch,nRepeat);
-% for iRep = 1:nRepeat
-%     fprintf('EnKF: Rep = %d\n',iRep);
-%     yEnKF(:,:,iRep) = multipleEpochEnKF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
-%     % 
-% end % repeat
-% 
-% for iRep = 1:nRepeat
-%     for iEp = 1:maxEpoch
-%          RMSE_EnKF(1,iEp,iRep) = norm(yEnKF(:,iEp,iRep) - y1)/sqrt(kEnd);
-%     end % epoch
-% end
-% disp('EnKF Done.')
-% figure(1); hold on; box; grid;
-% plot(yEnKF(:,end),'k--','LineWidth',1) 
-% drawnow;
+%% EnKF Code
+yEnKF=zeros(kEnd,maxEpoch,nRepeat);
+for iRep = 1:nRepeat
+    fprintf('EnKF: Rep = %d\n',iRep);
+    yEnKF(:,:,iRep) = multipleEpochEnKF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
+    % 
+end % repeat
+
+for iRep = 1:nRepeat
+    for iEp = 1:maxEpoch
+         RMSE_EnKF(1,iEp,iRep) = norm(yEnKF(:,iEp,iRep) - y1)/sqrt(kEnd);
+    end % epoch
+end
+disp('EnKF Done.')
+figure(1); hold on; box; grid;
+plot(yEnKF(:,end),'k--','LineWidth',1) 
+drawnow;
 %% UKF Code 
-% yUKF=zeros(kEnd,maxEpoch,nRepeat);
-% for iRep = 1:nRepeat
-%     fprintf('UKF: Rep = %d\n',iRep);
-%     yUKF(:,:,iRep) = multipleEpochUKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
-% end % repeat
-% 
-% for iRep = 1:nRepeat
-%     for iEp = 1:maxEpoch
-%          RMSE_UKF(1,iEp,iRep) = norm(yUKF(:,iEp,iRep) - y1)/sqrt(kEnd);
-%     end % epoch
-% end
-% disp('UKF Done.')
-% figure(1); hold on; box; grid;
-% plot(yUKF(:,end),'g--','LineWidth',1) 
+yUKF=zeros(kEnd,maxEpoch,nRepeat);
+for iRep = 1:nRepeat
+    fprintf('UKF: Rep = %d\n',iRep);
+    yUKF(:,:,iRep) = multipleEpochUKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
+end % repeat
+
+for iRep = 1:nRepeat
+    for iEp = 1:maxEpoch
+         RMSE_UKF(1,iEp,iRep) = norm(yUKF(:,iEp,iRep) - y1)/sqrt(kEnd);
+    end % epoch
+end
+disp('UKF Done.')
+figure(1); hold on; box; grid;
+plot(yUKF(:,end),'g--','LineWidth',1) 
 % =======
 % <<<<<<< Updated upstream
 % yUKF=zeros(kEnd,maxEpoch,nRepeat);
@@ -116,23 +116,23 @@ end
 
 %% OTF Code
 % <<<<<<< Updated upstream
-tic
-yOTF=zeros(kEnd,maxEpoch,nRepeat);
-% likfun = @(y,x,ip)exp(-0.5*(y-hmeas(x,ip))'*(R\(y-hmeas(x,ip))));
-% parfor (iRep = 1:nRepeat,2)
-for iRep = 1:nRepeat
-    clc
-    fprintf('OTF: Rep = %d\n',iRep);
-    yOTF(:,:,iRep) = multipleEpochOTF(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep),likfun);
-end % repeat
-
-for iRep = 1:nRepeat
-    for iEp = 1:maxEpoch
-         RMSE_OTF(1,iEp,iRep) = norm(yOTF(:,iEp,iRep) - y1)/sqrt(kEnd);
-    end % epoch
-end
-disp('OTF Done.')
-toc
+% tic
+% yOTF=zeros(kEnd,maxEpoch,nRepeat);
+% % likfun = @(y,x,ip)exp(-0.5*(y-hmeas(x,ip))'*(R\(y-hmeas(x,ip))));
+% % parfor (iRep = 1:nRepeat,2)
+% for iRep = 1:nRepeat
+%     clc
+%     fprintf('OTF: Rep = %d\n',iRep);
+%     yOTF(:,:,iRep) = multipleEpochOTFnew(maxEpoch,kEnd,nSample,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep),likfun);
+% end % repeat
+% 
+% for iRep = 1:nRepeat
+%     for iEp = 1:maxEpoch
+%          RMSE_OTF(1,iEp,iRep) = norm(yOTF(:,iEp,iRep) - y1)/sqrt(kEnd);
+%     end % epoch
+% end
+% disp('OTF Done.')
+% toc
 % % save OTF_ref_6_to_10.mat
 % figure(1); hold on; box; grid;
 % plot(yOTF(:,end),'m--','LineWidth',1) 

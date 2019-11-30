@@ -10,7 +10,7 @@ for iEp = 1:maxEpoch
     eta = max(0.5*eta,0.1);
     % clc;
     fprintf('OTF:  Epoch = %d.\n',iEp);
-    [xSamples_pst,W_pst] = OTF(xSamples_prev,fstate,hmeas,yMeas,eta*Q,R,iP,1,likfun);
+    [xSamples_pst,W_pst] = OTFnew(xSamples_prev,fstate,hmeas,yMeas,eta*Q,R,iP,1,likfun);
     x_pst = xSamples_pst*W_pst';
     xSamples_prev = xSamples_pst;
     

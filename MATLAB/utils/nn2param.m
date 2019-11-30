@@ -7,10 +7,12 @@
 function param = nn2param(NN)
     vecB=[];vecW=[];
     for i=1:length(NN.W)
-        vecW = [vecW;vec(NN.W{i})];
+        t1 = NN.W{i};
+        vecW = [vecW;t1(:)];
     end
     for i=1:length(NN.B)
-        vecB = [vecB;vec(NN.B{i})];
+        t2 = NN.B{i};
+        vecB = [vecB;t2(:)];
     end
     param = [vecW;vecB];
 end

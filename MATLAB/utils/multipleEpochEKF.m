@@ -7,7 +7,7 @@ Inx = eye(length(x0));
 Ast = Inx;
 eta = 1;
 for iEp = 1:maxEpoch
-    eta = max(0.5*eta,0.1);
+    eta = 0;%max(0.5*eta,0.1);
     fprintf('EKF: Epoch = %d.\n',iEp);
     for k = 1:kEnd
         % clc; 

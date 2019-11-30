@@ -7,7 +7,7 @@ xSamples_prev = xInitSamples;
 yEnKF=zeros(kEnd,maxEpoch);
 eta = 1;
 for iEp = 1:maxEpoch
-    eta = max(0.5*eta,0.1);
+    eta = 0; % max(0.5*eta,0.1);
     % clc;
     fprintf('EnKF: Epoch = %d.\n',iEp);
     [xSamples_pst,W_pst] = EnKF(xSamples_prev,fstate,hmeas,yMeas,eta*Q,R,iP,1);

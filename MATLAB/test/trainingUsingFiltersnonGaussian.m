@@ -8,13 +8,21 @@ ny = Ln(end); % Number of measurements = no. of o/p of NN
 Inx  = eye(nx);
 Ast = Inx; % State transition matrix is identity
 var_meas = 0.5; % variance of measurement noise; sigma^2
-var_proc = 0*0.01; % variance of process noise
+var_proc = 0.01; % variance of process noise
 var_initState = 2; % initial state covariance
 P0 = var_initState*Inx; % Initial state covariance matrix
 Q = var_proc*Inx; % Process noise covariance matrix
+
+% MEDIUM
 A = [-0.1;0.1];
 B = [0.2;0.2];
 W = [0.4;0.6];
+
+% LARGE
+A = [-0.1;0.1];
+B = [1;1];
+W = [0.4;0.6];
+
 likfun = @(x) GaussBimodalPdf(A,B,W,x);
 % likfun = @(y,x,ip)exp(-0.5*(y-hmeas(x,ip))'*(R\(y-hmeas(x,ip))));
 R = W(1)*B(1)^2 + W(1)*W(2)^2*(A(1)+A(2))^2 +  W(2)*B(2)^2 + W(2)*W(1)^2*(A(2)-A(1))^2;
@@ -33,20 +41,20 @@ NN_init = NNconstruct(ni,Ln,1);
 for k = 1:kEnd
     y_init(k,1) = measModel(NN_init,iP(k,:)');
 end
-% %% EKF Code
-% yEKF=zeros(kEnd,maxEpoch,nRepeat);
-% for iRep = 1:nRepeat
-%     fprintf('EKF: Rep = %d\n',iRep);
-%     yEKF(:,:,iRep) = multipleEpochEKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
-% end % repeat
-% for iRep = 1:nRepeat
-%     for iEp = 1:maxEpoch
-%          RMSE_EKF(1,iEp,iRep) = norm(yEKF(:,iEp,iRep) - y1)/sqrt(kEnd);
-%     end % epoch
-% end
-% disp('EKF Done.')
-% drawnow;
-% % 
+%% EKF Code
+yEKF=zeros(kEnd,maxEpoch,nRepeat);
+for iRep = 1:nRepeat
+    fprintf('EKF: Rep = %d\n',iRep);
+    yEKF(:,:,iRep) = multipleEpochEKF(maxEpoch,kEnd,P0,Q,R,yMeas,iP,NNconstruct(ni,Ln,iRep));
+end % repeat
+for iRep = 1:nRepeat
+    for iEp = 1:maxEpoch
+         RMSE_EKF(1,iEp,iRep) = norm(yEKF(:,iEp,iRep) - y1)/sqrt(kEnd);
+    end % epoch
+end
+disp('EKF Done.')
+drawnow;
+% 
 %% EnKF Code
 yEnKF=zeros(kEnd,maxEpoch,nRepeat);
 for iRep = 1:nRepeat

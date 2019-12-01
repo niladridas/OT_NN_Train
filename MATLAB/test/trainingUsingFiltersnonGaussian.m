@@ -19,9 +19,9 @@ Q = var_proc*Inx; % Process noise covariance matrix
 % W = [0.4;0.6];
 
 % LARGE
-A = [-0.1;0.1];
-B = [1;1];
-W = [0.4;0.6];
+A = [-0.2;0.2];
+B = [2;2];
+W = [0.3;0.7];
 
 likfun = @(x) GaussBimodalPdf(A,B,W,x);
 % likfun = @(y,x,ip)exp(-0.5*(y-hmeas(x,ip))'*(R\(y-hmeas(x,ip))));
@@ -33,7 +33,7 @@ yMeas = y1 + GaussBimodalSamples(A,length(y1),B,W);
 
 % normrnd(0,sqrt(var_meas),[length(y1),1]); % Synthetic Noisy measurements
 kEnd = length(yMeas);
-maxEpoch = 20;
+maxEpoch = 30;
 nRepeat = 1;
 arrRepeat = 1:20;
 nSample = 100;

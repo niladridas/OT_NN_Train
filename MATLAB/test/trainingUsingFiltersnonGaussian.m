@@ -14,9 +14,9 @@ P0 = var_initState*Inx; % Initial state covariance matrix
 Q = var_proc*Inx; % Process noise covariance matrix
 
 % MEDIUM
-A = [-0.1;0.1];
-B = [0.2;0.2];
-W = [0.4;0.6];
+% A = [-0.1;0.1];
+% B = [0.2;0.2];
+% W = [0.4;0.6];
 
 % LARGE
 A = [-0.1;0.1];
